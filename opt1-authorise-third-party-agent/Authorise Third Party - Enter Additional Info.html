@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="../resources/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-base.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-media-small.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-media-medium.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-ui.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+	<script src="../resources/js/angular.min.js"></script>
+	<script src="../resources/js/app.js"></script>
+</head>
+
+<body ng-app="app">
+	<main-header> </main-header>
+	<main-nav-tp> </main-nav-tp>
+	<!-- =================================== Navigation End =================================== -->
+	<!-- ============================== Container Wrapper Row ============================== -->
+	<div class="main-body-wrapper">
+		<div class="breadcrumb-wrapper hidden-xs hidden-sm">
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li>Authorise Third Party Entity</li>
+			</ol>
+		</div>
+		<div class="header-title-wrapper">
+			<div class="common-page-title">Authorise Third Party Entity</div>
+            <div class="authorise-tp-stepThree"></div>
+			<div class="page-error"></div>
+			<div class="clearfix"></div>
+		</div>
+        <div class="linebreak"></div>
+		<div class="section-description">Select Third Party Entity</div>
+			<div class="selected-user-accordion_container">      
+                     <div class="accordion">
+                          <div class="accordion-group">
+                            <div class="accordion-heading">
+                              <a class="accordion-toggle collapsed" data-toggle="collapse" href="#collapseOne">
+                                <em class="icon-fixed-width fa fa-plus pull-right"></em>1 Selected User(s)
+                              </a>
+                            </div>
+                            <div style="height: 0px;" id="collapseOne" class="accordion-body collapse">
+                              <div class="accordion-inner">
+			                   <p>Jasper</p>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div><!-- end accordion -->
+    	    </div>	
+            <div class="doublelinebreak"></div>
+				
+					<!-- ============================== Table Approve Admin Account Row ============================== -->
+					<div class="row-odd-wrapper assign-selected-e-services col-sm-7">
+					<div id="toolbar">
+						<span class="periodLabel">Some e-Services require additional information. Enter details to proceed.</span>
+					</div>
+						<table id="eserviceadditionaldetails" class="table-assign-selected-e-services col-sm-5 table-striped table-no-bordered table table-hover" data-toggle="table" data-pagination="false" data-click-to-select="true" data-toolbar="#toolbar" data-filter-control="true" data-filter-show-clear="true">
+							<thead>
+								<tr>
+									<th class="add-param-tbl-delete add-param-tbl-col-1" style="" data-field="actionDelete" tabindex="0"><div class="th-inner "></div><div class="fht-cell"><div style="height: 34px;"></div></div></th>
+									<th class="add-param-tbl-col-2" data-field="uenEntityID">Govt</br>Agency</th>
+                                    <th class="add-param-tbl-delete add-param-tbl-col-1"></th>
+									<th class="add-param-tbl-col-4" data-field="entitysSelectedEservices" tabindex="0">Entity's Selected<br> e-Service</th>
+									<th class="add-param-tbl-col-5" data-field="agencyCheckRequired">Agency<br>Check<br>Required</th>
+									<th class="add-param-tbl-col-6" data-field="additionalDetailsRequired" data-sortable="true">Additional<br> Details<br> Required</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><span class="icon-delete-disabled"></span></td>
+									<td>IRAS</td>
+                                    <td><image src="../resources/img/icons-new.png" class="news-image-small"></td>
+									<td>IRAS e-Service 1</td>
+									<td class="add-param-tbl-col-4" style="">
+                        				<a class="pop pull-left" data-content="N" data-original-title="" title="">
+                        				<span class="icon-agency-search"></span></a>
+                        			</td>
+									<td class="add-param-tbl-col-5" style="">
+                        				<span class="icons-additional-detail"></span>
+                        			</td>
+								</tr>
+								<tr>
+									<td><span class="icon-delete-disabled"></span></td>
+									<td>CPF</td>
+                                    <td><image src="../resources/img/icons-new.png" class="news-image-small"></td>
+									<td>CPF e-Service 1</td>
+									<td class="add-param-tbl-col-4" style="">
+                        				<a class="pop pull-left" data-content="N" data-original-title="" title="">
+                        				<span class="icon-agency-search"></span></a>
+                        			</td>
+									<td class="add-param-tbl-col-5" style="">
+                        				<span class="icons-additional-detail"></span>
+                        			</td>
+								</tr>		
+								<tr>
+									<td><span class="icon-delete-disabled"></span></td>
+									<td>CPF</td>
+                                    <td><image src="../resources/img/icons-new.png" class="news-image-small"></td>
+									<td>CPF e-Service 1</td>
+									<td class="add-param-tbl-col-4" style="">
+                        				<a class="pop pull-left" data-content="N" data-original-title="" title="">
+                        				<span class="icon-agency-search"></span></a>
+                        			</td>
+									<td class="add-param-tbl-col-5" style="">
+                        				<span class="icons-additional-detail"></span>
+                        			</td>
+								</tr>		
+								<tr>
+									<td><span class="icon-delete-disabled"></span></td>
+									<td>CPF</td>
+                                    <td><image src="../resources/img/icons-new.png" class="news-image-small"></td>
+									<td>CPF e-Service 1</td>
+									<td class="add-param-tbl-col-4" style="">
+                        				<a class="pop pull-left" data-content="N" data-original-title="" title="">
+                        				<span class="icon-agency-search"></span></a>
+                        			</td>
+									<td class="add-param-tbl-col-5" style="">
+                        				<span class="icons-additional-detail"></span>
+                        			</td>
+								</tr>		
+								<tr>
+									<td><span class="icon-delete-disabled"></span></td>
+									<td>CPF</td>
+                                    <td><image src="../resources/img/icons-new.png" class="news-image-small"></td>
+									<td>CPF e-Service 1</td>
+									<td class="add-param-tbl-col-4" style="">
+                        				<a class="pop pull-left" data-content="N" data-original-title="" title="">
+                        				<span class="icon-agency-search"></span></a>
+                        			</td>
+									<td class="add-param-tbl-col-5" style="">
+                        				<span class="icons-additional-detail"></span>
+                        			</td>
+								</tr>		
+								<tr>
+									<td><span class="icon-delete-disabled"></span></td>
+									<td>CPF</td>
+                                    <td><image src="../resources/img/icons-new.png" class="news-image-small"></td>
+									<td>CPF e-Service 1</td>
+									<td class="add-param-tbl-col-4" style="">
+                        				<a class="pop pull-left" data-content="N" data-original-title="" title="">
+                        				<span class="icon-agency-search"></span></a>
+                        			</td>
+									<td class="add-param-tbl-col-5" style="">
+                        				<span class="icons-additional-detail"></span>
+                        			</td>
+								</tr>		
+							
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="7" class="footer-table-select-entity-eservice" for="count-checked-checkboxes"><span id="selectedItemCount">6</span> e-Service(s) selected.</td>
+								</tr>
+							</tfoot>
+						</table>
+					
+					
+					</div>
+					<div class="right-panel col-sm-5 col-xs-12">
+						<div class="right-panel-wrapper-ATP">
+							<div id="addiParam-0" >
+                 				<div class="right-panel-param-tile">IRAS - e-Service ID A7</div>
+                  				<span class="linebreak"></span>
+                 				<div class="right-panel-field-wrapper col-sm-12">
+                 					<label>Role
+                     					<span class="mandatory">*</span><span class="icon-info pop" data-original-title="" title=""></span>
+                     				</label>
+                 					<select class="form-control">
+                     				<option value="0" selected="selected">Preparer</option>
+                     				<option roledescription="builder" value="1276">builder</option>
+                     				</select>
+                 				</div>
+								<div id="addiParam-1"></div>
+								<span class="linebreak"></span>
+                 				<div class="right-panel-field-wrapper col-sm-12">
+                 					<label>Sub-UEN
+                     				</label>
+                 					<select class="form-control">
+                     				<option value="0" selected="selected">S345671</option>
+                     				<option roledescription="builder" value="1276">S456782</option>
+                     				</select>
+                 				</div>
+								<div id="addiParam-2"></div>
+								<span class="linebreak"></span>
+                 				<div class="right-panel-field-wrapper col-sm-12">
+                 					<label>Delegation Effective Date<span class="mandatory">*</span>
+                     				</label>
+                 					<div class="input-group"><input id="fromDate" name="accountHistoryDTO.fromDate" class="custom-tag-cal-field form-control custom-tag-datePickerPastDate hasDatepicker" type="text" value="" maxlength="10" autocomplete="off"><img class="ui-datepicker-trigger hide" src="" alt="" title=""><label class="custom-tag-cal-btn input-group-addon btn"><span class="fa fa-calendar fa-lg"></span></label></div>
+                 				</div>
+								<div id="addiParamDiv"></div>
+							</div>
+							<div id="addiParam-3"></div>
+								<span class="linebreak"></span>
+                 				<div class="right-panel-field-wrapper col-sm-12">
+                 					<label>Delegation Expiry Date</label>
+                 					<div class="input-group"><input id="fromDate" name="accountHistoryDTO.fromDate" class="custom-tag-cal-field form-control custom-tag-datePickerPastDate hasDatepicker" type="text" value="" maxlength="10" autocomplete="off"><img class="ui-datepicker-trigger hide" src="" alt="" title=""><label class="custom-tag-cal-btn input-group-addon btn"><span class="fa fa-calendar fa-lg"></span></label></div>
+                 				</div>
+								<div id="addiParamDiv"></div>
+							</div>
+								
+							</div>
+							
+						</div>
+					
+					<div class="fixed-table-footer" style="display: none;"><table><tbody><tr></tr></tbody></table></div>
+					<div class="fixed-table-pagination" style="display: none;"></div>
+					<div class="clearfix"></div>
+					
+					
+					
+				</div>
+				<!-- =================================== Authorise History Row End =================================== -->
+				
+	
+		<!-- row even  end -->
+		<div class="clearfix"></div>
+		<div class="row-odd-wrapper">
+        <div class="doublelinebreak"></div>
+			<div class="form-inline col-sm-3 col-sm-offset-5 col-xs-9 col-xs-offset-1">
+				<button type="button" class="btn btn-default btn-md" onclick="return goBack();">Back</button>
+				<button type="submit" class="btn btn-primary btn-md">Next</button>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+	<!-- ============================== Main Row End ============================== -->
+	<!-- =================================== Footer =================================== -->
+	<main-footer> </main-footer>
+	<!-- =================================== Footer End =================================== -->
+	<!-- =================================== Export DataTable =================================== -->
+	<script>
+		var $table = $('#table');
+		$(function () {
+			$('#toolbar').find('select').change(function () {
+				$table.bootstrapTable('destroy').bootstrapTable({
+					exportDataType: $(this).val()
+				});
+			});
+		})
+	</script>
+	<!-- =================================== Export DataTable End=================================== -->
+	<!-- =================================== Toggle Column Input Fields=================================== -->
+	<script>
+		$(document).ready(function () {
+			$("input.uenEntityID, input.entityName, input.govtAgency, input.authoriseeService").hide();
+			$(".toggleSearch").click(function () {
+				$("input.uenEntityID, input.entityName, input.govtAgency, input.authoriseeService").toggle();
+				console.log('okay');
+			});
+		});
+	</script>
+	<!-- =================================== Toggle Column Input Fields Ends=================================== -->
+</body>
+
+</html>

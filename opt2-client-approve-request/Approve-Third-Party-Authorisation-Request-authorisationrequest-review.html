@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../resources/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-base.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-media-small.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-media-medium.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-ui.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap-table.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-toolbar.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-export.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-filter-control.js"></script>
+    <script src="../resources/js/angular.min.js"></script>
+	<script src="../resources/js/app.js"></script>
+</head>
+
+<body ng-app="app">
+	<main-header> </main-header>
+	<main-nav-tp> </main-nav-tp>
+	<!-- ============================== Container Wrapper Row ============================== -->
+	<div class="main-body-wrapper">
+		<div class="breadcrumb-wrapper hidden-xs hidden-sm">
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li>Third Party Authorisation Request</li>
+			</ol>
+		</div>
+		<div class="header-title-wrapper">
+			<div class="common-page-title">Third Party Authorisation Request</div>
+			<div class="approve-tp-stepTwo"></div>
+			<div class="page-error"></div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="doublelinebreak"></div>
+	<!-- ============================== Client Approval Review Row ============================== -->
+				<div class="row-odd-wrapper">
+					<div id="toolbar">
+						<span class="periodLabel">Verify the selected e-Service authorisation request(s) to approve.</span>
+					</div>
+						<table id="table" data-toggle="table" data-pagination="false" data-search="false" data-advanced-search="true" data-show-export="false" data-click-to-select="true" data-toolbar="#toolbar" data-url="../common-resources/js/view-transaction-history.json" class="table-striped table-no-bordered">
+							<thead>
+								<tr>
+									<th class="add-param-tbl-col-1" data-field="uenEntityID" data-sortable="true">Entity ID</th>
+									<th class="add-param-tbl-col-2" data-field="entityName" data-sortable="true">Entity<br>Name</th>
+                                    <th class="add-param-tbl-col-delete add-param-tbl-col-1" data-field="govtAgency" data-sortable="true">Govt<br>Agency</th>
+									<th class="add-param-tbl-col-4" data-field="authorisedEService" data-sortable="true">Authorised</br>e-Services</th>
+									<th class="add-param-tbl-col-delete add-param-tbl-col-1" data-field="role" data-sortable="true">Role</th>
+									<th class="add-param-tbl-col-delete add-param-tbl-col-1" data-field="subUEN" data-sortable="true">Sub UEN</th>
+									<th class="add-param-tbl-col-delete add-param-tbl-col-1"data-field="additionalParameters" data-sortable="true">Additional<br>Parameters</th>
+                                    <th class="add-param-tbl-col-delete add-param-tbl-col-1"data-field="effectiveDate" data-sortable="true">Effective<br>Date</th>
+									<th class="add-param-tbl-col-delete add-param-tbl-col-1"data-field="expiryDate" data-sortable="true">Expiry<br>Date</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>K09131G</td>
+									<td>Visual Entertainment</td>
+                                    <td>AGD</td>
+									<td>Vendors@Gov</td>
+									<td>User</td>
+									<td>ADK1731</td>
+									<td>YoA=2014</td>
+                                    <td>01/09/2014</td>
+                                    <td>01/09/2016</td>
+								</tr>
+								<tr>
+									<td>KP1234</td>
+									<td>KPMG</td>
+                                    <td>MTI</td>
+									<td>MTI Business Grants Portal (BGP)</td>
+									<td>Preparer</td>
+                                    <td>SU23543X</td>
+									<td>YoA=2014</td>
+									<td>31/09/2015</td>
+                                    <td>31/09/2016</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="13" class="empty-footer-table-approval"></td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+					
+				
+				
+                
+
+
+    <!-- =================================== Client Approval Review Row End =================================== -->
+				
+	
+		<!-- row even  end -->
+		<div class="clearfix"></div>
+		<div class="row-odd-wrapper">
+        <div class="doublelinebreak"></div>
+			<div class="form-inline col-sm-3 col-sm-offset-5 col-xs-9 col-xs-offset-1">
+				<button type="button" class="btn btn-default btn-md" onclick="return goBack();">Back</button>
+				<button type="submit" class="btn btn-primary btn-md">Approve</button>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+	<!-- ============================== Main Row End ============================== -->
+	<main-footer> </main-footer>
+	<!-- =================================== Export DataTable =================================== -->
+	<script>
+		var $table = $('#table');
+		$(function () {
+			$('#toolbar').find('select').change(function () {
+				$table.bootstrapTable('destroy').bootstrapTable({
+					exportDataType: $(this).val()
+				});
+			});
+		})
+	</script>
+	<!-- =================================== Export DataTable End=================================== -->
+	<!-- =================================== Toggle Column Input Fields=================================== -->
+	<script>
+		$(document).ready(function () {
+			$("input.uenEntityID, input.entityName, input.govtAgency, input.authoriseeService").hide();
+			$(".toggleSearch").click(function () {
+				$("input.uenEntityID, input.entityName, input.govtAgency, input.authoriseeService").toggle();
+				console.log('okay');
+			});
+		});
+	</script>
+	<!-- =================================== Toggle Column Input Fields Ends=================================== -->
+</body>
+
+</html>

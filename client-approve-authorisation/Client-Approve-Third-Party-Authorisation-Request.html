@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../resources/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-base.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-media-small.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-media-medium.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-ui.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap-table.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	 crossorigin="anonymous"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-toolbar.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-export.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-filter-control.js"></script>
+	<script src="../resources/js/angular.min.js"></script>
+	<script src="../resources/js/app.js"></script>
+</head>
+
+<body ng-app="app">
+	<main-header> </main-header>
+	<main-nav-tp> </main-nav-tp>
+	<!-- ============================== Container Wrapper Row ============================== -->
+	<div class="main-body-wrapper">
+		<div class="breadcrumb-wrapper hidden-xs hidden-sm">
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li>Third Party Authorisation Request</li>
+			</ol>
+		</div>
+		<div class="header-title-wrapper">
+			<div class="common-page-title">Third Party Authorisation Request</div>
+			<div class="page-error"></div>
+			<div class="clearfix"></div>
+		</div>
+		<!-- ============================== Table Row ============================== -->
+		<div class="row-odd-wrapper">
+			<ul class="common-tab nav nav-tabs">
+				<li class="common-first-tab active"><a href="#common-firstTab" data-toggle="tab">Pending Requests</a></li>
+				<li class="common-second-tab"><a href="#common-secondTab" data-toggle="tab">Request History</a></li>
+			</ul>
+			<div class="tab-content ">
+				<div id="common-firstTab" class="tab-pane e-services-access-wrapper col-sm-12  active">
+					<div class="doublelinebreak"></div>
+					<!-- Export Tool Bar -->
+					<div id="toolbar">
+						<span class="table-filter-only-insidetab toggleSearch"><i class="fa fa-filter fa-lg" aria-hidden="true"></i> <u>Filter</u></span>
+					</div>
+					<!-- Export Tool Bar End-->
+					<table id="table" data-toggle="table" data-pagination="true" data-search="true" data-advanced-search="true"
+					 data-click-to-select="true" data-toolbar="#toolbar" class="table-striped table-no-bordered" data-filter-control="true"
+					 data-filter-show-clear="true" data-show-export="true">
+						<thead>
+							<tr>
+								<th data-field="state" data-checkbox="true"></th>
+								<th data-field="dateOfRequest" data-sortable="true" data-filter-control="input">Date of<br /> Request</th>
+								<th data-field="referenceID" data-sortable="true" data-filter-control="input">Reference ID</th>
+								<th data-field="uenEntityID" data-sortable="true" data-filter-control="input">UEN /<br /> Entity ID</th>
+								<th data-field="entityName" data-sortable="true" data-filter-control="input">Entity<br /> Name</th>
+								<th data-field="govtAgency" data-sortable="true" data-filter-control="input">Govt.<br /> Agency</th>
+								<th data-field="authoriseeService" data-sortable="true" data-filter-control="input">Authorised<br /> e-Services</th>
+								<th data-field="action" data-sortable="true">Action</th>
+							</tr>
+						</thead>
+						<tfoot>
+							<tr>
+								<td colspan="8" class="footer-table-select-entity-eservice">1 entity(s) selected</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+				<!-- =================================== Profile Row  End=================================== -->
+				<!-- =================================== Authorise e-Services Row =================================== -->
+				<div id="common-secondTab" class="tab-pane user-accounts-wrapper col-sm-12">
+					<div class="doublelinebreak"></div> Request History
+				</div>
+				<!-- ===================================Authorise e-Services Row End=================================== -->
+			</div>
+		</div>
+		<!-- row even  end -->
+		<div class="clearfix"></div>
+	</div>
+	<!-- ============================== Main Row End ============================== -->
+
+	<main-footer> </main-footer>
+
+	<!-- =================================== Export DataTable =================================== -->
+	<script>
+		var $table = $('#table');
+		$(function () {
+			$('#toolbar').find('select').change(function () {
+				$table.bootstrapTable('destroy').bootstrapTable({
+					exportDataType: $(this).val()
+				});
+			});
+		})
+	</script>
+	<!-- =================================== Export DataTable End=================================== -->
+	<!-- =================================== Toggle Column Input Fields=================================== -->
+	<script>
+		$(document).ready(function () {
+			$("input.dateOfRequest, input.referenceID,input.uenEntityID, input.entityName, input.govtAgency, input.authoriseeService").hide();
+			$(".toggleSearch").click(function () {
+				$("input.dateOfRequest, input.referenceID,input.uenEntityID, input.entityName, input.govtAgency, input.authoriseeService").toggle();
+				console.log('okay');
+			});
+		});
+	</script>
+	<!-- =================================== Toggle Column Input Fields Ends=================================== -->
+</body>
+
+</html>

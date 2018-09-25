@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="../resources/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-base.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-media-small.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-media-medium.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-ui.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap-table.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-toolbar.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-export.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-filter-control.js"></script>
+	<script src="../resources/js/angular.min.js"></script>
+	<script src="../resources/js/app.js"></script>
+</head>
+
+<body ng-app="app">
+	<main-header> </main-header>
+	<main-nav-tp> </main-nav-tp>
+	<!-- ============================== Main Wrapper Row ============================== -->
+	<div class="main-body-wrapper">
+		<div class="breadcrumb-wrapper hidden-xs hidden-sm">
+			<ol class="breadcrumb">
+				<li> <a href="#">Home</a> </li>
+				<li> Edit Client e-Service Authorisation </li>
+			</ol>
+		</div>
+		<div class="header-title-wrapper">
+			<div class="common-page-title">Edit Client e-Service Authorisation</div>
+			<div class="clearfix"></div>
+			<br />
+			<div class="view-approve-admin-title-description"></div>
+			<div class="edit-esrvc-assignment-tp-stepOne"></div>
+			<div class="clearfix"></div>
+			<br />
+			<div class="section-description">Edit e-Service access for:</div>
+			<div class="selected-user-accordion_container">
+				<div class="accordion">
+					<div class="accordion-group">
+						<div class="accordion-heading">
+							<a class="accordion-toggle collaspsed" data-toggle="collapse" href="#collapseOne"> <em class="icon-fixed-width fa fa-plus pull-right"></em>2 Selected User(s) </a>
+						</div>
+						<div style="height: 0px;" id="collapseOne" class="accordion-body collapse">
+							<div class="accordion-inner"> User 1
+								<br/> User 2 </div>
+						</div>
+					</div>
+				</div>
+				<!-- end accordion -->
+			</div>
+		</div>
+		<div class="doublelinebreak"></div>
+		<div class="table-desc">
+			<div style="display:block;">e-Services with <img src="../resources/img/icons_additional_detail.png"> require additional details.Click <img src="../resources/img/icons_additional_detail.png"> to enter details.</div>
+		</div>
+		<div class="section-subtitle"><span class="mandatory">* </span>- denotes mandatory fields </div>
+		<div class="row-odd-wrapper assign-selected-e-services col-sm-7">
+			<div class="clearfix"></div>
+			<!-- Export Tool Bar -->
+			<div id="toolbar"> </div>
+			<!-- Export Tool Bar End-->
+					<table class="table-enterDetails col-sm-5 table-striped table-no-bordered table table-hover" data-toggle="table" data-pagination="false" data-click-to-select="true" data-toolbar="#toolbar" data-filter-control="true" data-filter-show-clear="true">
+							<thead class="table-enterDetails">
+								<tr>
+									<th></th>
+									<th  data-width="90" data-field="uenEntityID" data-sortable="true">&nbsp;Govt</br>&nbsp;Agency</th>
+                                    <th data-width="50">&nbsp;&nbsp;</th>
+									<th  data-width="180" data-field="entitysSelectedEservices" data-sortable="true">e-Service</th>
+									<th  data-width="100" data-field="agencyCheckRequired" data-sortable="true">Agency<br>Check<br>Required</th>
+									<th  data-width="100" data-field="additionalDetailsRequired" data-sortable="true">Additional<br> Details<br> Required</th>
+								</tr>
+							</thead>
+							<tbody class="table-enterDetails">
+								<tr>
+									<td></td>
+									<td data-width="90">IRAS</td>
+                                    <td data-width="40"><image src="../resources/img/icons-new.png" class="table-new-image-small"></td>
+									<td data-width="216">IRAS e-Service 1</td>
+									<td  data-width="84">
+                        				<a class="pop pull-left" data-content="N" data-original-title="" title="">
+                        				<span class="icon-agency-search"></span></a>
+                        			</td>
+									<td  data-width="84">
+                        				<span class="icons-additional-detail"></span>
+                        			</td>
+								</tr>
+								<tr>
+									<td></td>								
+									<td data-width="90">CPF</td>
+                                    <td data-width="40"><image src="../resources/img/icons-new.png" class="table-new-image-small"></td>
+									<td data-width="216">CPF e-Service 1</td>
+									<td  data-width="84">
+                        				<a class="pop pull-left" data-content="N" data-original-title="" title="">
+                        				<span class="icon-agency-search"></span></a>
+                        			</td>
+									<td  data-width="84">
+                        				<span class="icons-additional-detail"></span>
+                        			</td>
+								</tr>		
+								<tr>
+									<td></td>						
+									<td data-width="90">CPF</td>
+                                    <td data-width="40"><image src="../resources/img/icons-new.png" class="table-new-image-small"></td>
+									<td data-width="216">CPF e-Service 1</td>
+									<td  data-width="84">
+                        				<a class="pop pull-left" data-content="N" data-original-title="" title="">
+                        				<span class="icon-agency-search"></span></a>
+                        			</td>
+									<td  data-width="84">
+                        				<span class="icons-additional-detail"></span>
+                        			</td>
+								</tr>		
+								<tr>
+									<td></td>								
+									<td data-width="90">CPF</td>
+                                    <td data-width="40"><image src="../resources/img/icons-new.png" class="table-new-image-small"></td>
+									<td data-width="216">CPF e-Service 1</td>
+									<td  data-width="84">
+                        				<a class="pop pull-left" data-content="N" data-original-title="" title="">
+                        				<span class="icon-agency-search"></span></a>
+                        			</td>
+									<td  data-width="84">
+                        				<span class="icons-additional-detail"></span>
+                        			</td>
+								</tr>		
+								<tr>
+									<td></td>								
+									<td data-width="90">CPF</td>
+                                    <td data-width="40"><image src="../resources/img/icons-new.png" class="table-new-image-small"></td>
+									<td data-width="216">CPF e-Service 1</td>
+									<td  data-width="84">
+                        				<a class="pop pull-left" data-content="N" data-original-title="" title="">
+                        				<span class="icon-agency-search"></span></a>
+                        			</td>
+									<td  data-width="84">
+                        				<span class="icons-additional-detail"></span>
+                        			</td>
+								</tr>		
+								<tr>
+									<td></td>								
+									<td data-width="90">CPF</td>
+                                    <td data-width="40"><image src="../resources/img/icons-new.png" class="table-new-image-small"></td>
+									<td data-width="216">CPF e-Service 1</td>
+									<td  data-width="84">
+                        				<a class="pop pull-left" data-content="N" data-original-title="" title="">
+                        				<span class="icon-agency-search"></span></a>
+                        			</td>
+									<td  data-width="84">
+                        				<span class="icons-additional-detail"></span>
+                        			</td>
+								</tr>		
+									<tr>
+									<td></td>									
+									<td data-width="90">CPF</td>
+                                    <td data-width="40"><image src="../resources/img/icons-new.png" class="table-new-image-small"></td>
+									<td data-width="216">CPF e-Service 1</td>
+									<td  data-width="84">
+                        				<a class="pop pull-left" data-content="N" data-original-title="" title="">
+                        				<span class="icon-agency-search"></span></a>
+                        			</td>
+									<td  data-width="84">
+                        				<span class="icons-additional-detail"></span>
+                        			</td>
+								</tr>	
+									<tr>
+									<td></td>									
+									<td data-width="90">CPF</td>
+                                    <td data-width="50"><image src="../resources/img/icons-new.png" class="table-new-image-small"></td>
+									<td data-width="216">CPF e-Service 1</td>
+									<td  data-width="84">
+                        				<a class="pop pull-left" data-content="N" data-original-title="" title="">
+                        				<span class="icon-agency-search"></span></a>
+                        			</td>
+									<td  data-width="84">
+                        				<span class="icons-additional-detail"></span>
+                        			</td>
+								</tr>	
+							
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="7" class="footer-table-select-entity-eservice" for="count-checked-checkboxes"><span id="selectedItemCount">6</span> e-Service(s) selected.</td>
+								</tr>
+							</tfoot>
+						</table>
+		</div>
+		<div class="right-panel col-sm-5 col-xs-12">
+			<div class="right-panel-tp-wrapper">
+				<div id="addiParam-0">
+					<div class="right-panel-param-tile">IRAS - e-Service ID A7</div> <span class="linebreak"></span>
+					<div class="right-panel-field-wrapper col-sm-12">
+						<label>Role <span class="mandatory">*</span><span class="icon-info pop" data-original-title="" title=""></span> </label>
+						<select class="form-control">
+							<option value="0" selected="selected">Preparer</option>
+							<option roledescription="builder" value="1276">builder</option>
+						</select>
+					</div>
+					<div id="addiParam-1"></div> <span class="linebreak"></span>
+					<div class="right-panel-field-wrapper col-sm-12">
+						<label>GSTN</label>
+						<select class="form-control">
+							<option value="0" selected="selected">S123456X</option>
+							<option roledescription="builder" value="1276">S234567Z</option>
+						</select>
+					
+					</div>
+					<div class="right-panel-field-wrapper col-sm-12">
+						<label>Year of Assessment</label>
+						<select class="form-control">
+							<option value="0" selected="selected">2014</option>
+						</select>
+					
+					</div>
+					<div id="addiParam-2"></div> <span class="linebreak"></span>
+					<div class="right-panel-field-wrapper col-sm-12">
+						<label>Effective Date<span class="mandatory">*</span> </label>
+						<div class="input-group">
+							<input id="fromDate" name="accountHistoryDTO.fromDate" class="custom-tag-cal-field form-control custom-tag-datePickerPastDate hasDatepicker" type="text" value="" maxlength="10" autocomplete="off"><img class="ui-datepicker-trigger hide" src="" alt="" title="">
+							<label class="custom-tag-cal-btn input-group-addon btn"><span class="fa fa-calendar fa-lg"></span></label>
+						</div>
+					</div>
+					<div id="addiParamDiv"></div>
+				</div>
+				<div id="addiParam-3"></div> <span class="linebreak"></span>
+				<div class="right-panel-field-wrapper col-sm-12">
+					<label>Expiry Date </label>
+					<div class="input-group">
+						<input id="fromDate" name="accountHistoryDTO.fromDate" class="custom-tag-cal-field form-control custom-tag-datePickerPastDate hasDatepicker" type="text" value="" maxlength="10" autocomplete="off"><img class="ui-datepicker-trigger hide" src="" alt="" title="">
+						<label class="custom-tag-cal-btn input-group-addon btn"><span class="fa fa-calendar fa-lg"></span></label>
+					</div>
+				</div>
+				<div id="addiParamDiv"></div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<!-- ============================== Submit-Cancel Row ============================== -->
+		<div class="row-odd-wrapper">
+			<div class="form-inline col-sm-3 col-sm-offset-5 col-xs-12 col-xs-offset-0">
+				<button type="button" class="btn-size btn btn-default btn-md">Back</button>
+				<button type="button" class="btn-size btn btn-primary btn-md">Next</button>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- ============================== Main Wrapper Row End============================== -->
+	<main-footer> </main-footer>
+	<!-- =================================== Export DataTable =================================== -->
+	<script>
+		var $table = $('#table');
+		$(function () {
+			$('#toolbar').find('select').change(function () {
+				$table.bootstrapTable('destroy').bootstrapTable({
+					exportDataType: $(this).val()
+				});
+			});
+		})
+	</script>
+	<!-- =================================== Export DataTable End=================================== -->
+	<!-- =================================== Toggle Selected User / User Groups =================================== -->
+	<script>
+		(function ($) {
+			"use strict"
+			// Accordion Toggle Items
+			var iconOpen = 'fa fa-minus'
+				, iconClose = 'fa fa-plus';
+			$(document).on('show.bs.collapse hide.bs.collapse', '.accordion', function (e) {
+				var $target = $(e.target)
+				$target.siblings('.accordion-heading').find('em').toggleClass(iconOpen + ' ' + iconClose);
+				if (e.type == 'show') $target.prev('.accordion-heading').find('.accordion-toggle').addClass('active');
+				if (e.type == 'hide') $(this).find('.accordion-toggle').not($target).removeClass('active');
+			});
+		})(jQuery);
+	</script>
+	<!-- =================================== Toggle Selected User / User Groups End=================================== -->
+	<script>
+		$(document).ready(function () {
+			$(".parameter-row1").click(function () {
+				$(".additional-parameters01").fadeToggle();
+				$(".additional-parameters02").hide();
+			});
+			$(".parameter-row2").click(function () {
+				$(".additional-parameters02").fadeToggle();
+				$(".additional-parameters01").hide();
+			});
+		});
+	</script>
+</body>
+
+</html>

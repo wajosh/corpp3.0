@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../resources/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-base.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-media-small.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-media-medium.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-ui.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap-table.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-toolbar.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-export.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-filter-control.js"></script>
+	<script src="../resources/js/angular.min.js"></script>
+	<script src="../resources/js/app.js"></script>
+</head>
+
+
+<body ng-app="app">
+	<main-header> </main-header>
+	<main-nav-tp> </main-nav-tp>
+
+	<!-- ============================== BreadCrumbs Row ============================== -->
+	<div class="approve-admin-success-container-wrapper">
+		<div class="breadcrumb-wrapper hidden-xs hidden-sm">
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li>Third-party Authorisation Request</li>
+			</ol>
+		</div>
+		<!-- ============================== BreadCrumbs Row End============================== -->
+        <!-- ============================== Table Row ============================== -->
+		<div class="row-odd-wrapper">
+			<ul class="common-tab nav nav-tabs">
+				<li class="common-first-tab active "><a href="#common-firstTab" data-toggle="tab">Pending Requests</a></li>
+				<li class="common-second-tab "><a href="#common-secondTab" data-toggle="tab">Request History</a></li>
+			</ul>
+			<div class="tab-content ">
+				<div id="common-firstTab" class="tab-pane e-services-access-wrapper col-sm-12 active ">
+                    <div class="clearfix"></div>
+            <!-- Export Tool Bar -->
+         <div class="row-odd-wrapper">
+									<div class="doublelinebreak"></div> 
+					<!-- Export Tool Bar -->
+					<div id="toolbar">
+						
+						<span class="table-filter-only-insidetab toggleSearch"><i class="fa fa-filter fa-lg" aria-hidden="true"></i> <u>Filter</u></span> 
+					</div>
+					<!-- Export Tool Bar End-->
+					<table id="table" data-toggle="table" data-pagination="false" data-search="true" data-advanced-search="true" data-click-to-select="true" data-toolbar="#toolbar" class="table-striped table-no-bordered" data-filter-control="true" data-filter-show-clear="true" data-show-export="true">
+						<thead>
+							<tr>
+								<th></th>
+								<th data-field="uenEntityID" data-sortable="true" data-filter-control="input" >UEN / <br/>Entity ID</th>
+                                <th data-field="entityName" data-sortable="true"data-filter-control="input" >Entity<br>Name</th>	
+                                <th data-field="govtAgency" data-sortable="true"data-filter-control="input" >Govt. <br/>Agency</th>
+								<th data-field="eservice" data-sortable="true"data-filter-control="input" >e-Service</th>
+								<th data-field="effectiveDate" data-sortable="true" data-filter-control="input" >Effective <br/>Date</th>
+								<th data-field="expiryDate" data-sortable="true"data-filter-control="input" >Expiry <br/>Date</th>
+                                <th data-field="action" data-sortable="false">Action</th>	
+							</tr>
+						</thead>
+						<tbody >
+						<tr>
+							<td></td>
+							<td>ALO12031</td>
+                            <td>ABC Accounting Pte Ltd</td>
+							<td>IRAS</td>
+							<td>IRAS e-Service1</td>
+							<td>01/09/2016</td>
+							<td>01/09/2017</td>
+                            <td class="td-manage-request">Manage<br> Request</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>ALO14031</td>
+                            <td>123 Tax Providers</td>
+							<td>CPF</td>
+							<td>CPF e-Service1</td>
+							<td>01/09/2016</td>
+							<td>31/09/2017</td>
+                            <td class="td-manage-request">Manage<br> Request</td>
+						</tr>
+                            
+
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="10" class="footer-table-select-entity-eservice">1 entity(s) selected</td>
+							</tr>
+						</tfoot>
+					</table>
+			
+		</div>
+		
+
+		<div class="clearfix"></div>
+				</div>
+				<!-- =================================== Profile Row  End=================================== -->
+				<!-- =================================== Authorise e-Services Row =================================== -->
+				<div id="common-secondTab" class="tab-pane user-accounts-wrapper col-sm-12 ">Request History</div>
+                
+				<!-- ===================================Authorise e-Services Row End=================================== -->
+			</div>
+		</div>
+		<!-- row even  end -->
+		<div class="clearfix"></div>
+	</div>
+	<!-- =================================== Footer =================================== -->
+    <main-footer></main-footer>
+	<!-- =================================== Footer End =================================== -->
+	<!-- =================================== Toggle Column Input Fields=================================== -->
+	<script>
+		$(document).ready(function () {
+			$("input.date, input.uenEntityID, input.entityName, input.govtAgency, input.eservice, input.role, input.subUen, input.additionalParam, input.additionalParam, input.effectiveDate, input.expiryDate").hide();
+			$(".toggleSearch").click(function () {
+				$("input.date,input.uenEntityID, input.entityName, input.govtAgency, input.eservice, input.role, input.subUen, input.additionalParam, input.additionalParam, input.effectiveDate,  input.expiryDate").toggle();
+				console.log('okay');
+			});
+		});
+	</script>
+</body>
+
+</html>

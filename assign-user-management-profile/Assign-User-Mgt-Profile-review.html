@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../resources/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-base.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-media-small.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-media-medium.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-ui.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap-table.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	 crossorigin="anonymous"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-toolbar.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-export.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-filter-control.js"></script>
+	<script src="../resources/js/angular.min.js"></script>
+	<script src="../resources/js/app.js"></script>
+</head>
+
+<body ng-app="app">
+	<main-header> </main-header>
+	<main-nav-tp> </main-nav-tp>
+	<!-- =================================== Navigation End =================================== -->
+	<!-- ============================== Container Wrapper Row ============================== -->
+	<div class="main-body-wrapper">
+		<div class="breadcrumb-wrapper hidden-xs hidden-sm">
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li>Assign User Management Profile</li>
+			</ol>
+		</div>
+		<div class="header-title-wrapper">
+			<div class="common-page-title">Assign User Management Profile</div>
+			<div class="assign-user-mgt-stepThree"></div>
+			<div class="page-error"></div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="doublelinebreak"></div>
+		<br>
+
+		<!-- ============================== Selected Third Party Entity e-Service Row ============================== -->
+		<div class="row-even-wrapper">
+			<div class="section-title">Verify selected users that User S9990085G can manage.</div>
+			<div class="form-horizontal">
+				<div class="form-group">
+					<div class="label-wrapper">
+						<label class="govtAgency col-md-3 col-sm-4 control-label"><b>Jackie Woolf</b></label>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="form-group">
+					<div class="label-wrapper">
+						<label class="govtAgency col-md-3 col-sm-4 control-label"><b>Noxique Jordan</b></label>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="doublelinebreak"></div>
+		</div>
+	</div>
+	<!-- =================================== Selected Third Party Entity e-Service Row End =================================== -->
+
+
+	<!-- row even  end -->
+	<div class="clearfix"></div>
+	<div class="row-odd-wrapper">
+		<div class="doublelinebreak"></div>
+		<div class="form-inline col-sm-3 col-sm-offset-5 col-xs-9 col-xs-offset-1">
+			<button type="button" class="btn btn-default btn-md" onclick="return goBack();">Back</button>
+			<button type="submit" class="btn btn-primary btn-md">Submit</button>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+
+	<!-- ============================== Main Row End ============================== -->
+	<!-- =================================== Footer =================================== -->
+	<main-footer></main-footer>
+	<!-- =================================== Footer End =================================== -->
+	<!-- =================================== Export DataTable =================================== -->
+	<script>
+		var $table = $('#table');
+		$(function () {
+			$('#toolbar').find('select').change(function () {
+				$table.bootstrapTable('destroy').bootstrapTable({
+					exportDataType: $(this).val()
+				});
+			});
+		})
+	</script>
+	<!-- =================================== Export DataTable End=================================== -->
+	<!-- =================================== Toggle Column Input Fields=================================== -->
+	<script>
+		$(document).ready(function () {
+			$("input.uenEntityID, input.entityName, input.govtAgency, input.authoriseeService").hide();
+			$(".toggleSearch").click(function () {
+				$("input.uenEntityID, input.entityName, input.govtAgency, input.authoriseeService").toggle();
+				console.log('okay');
+			});
+		});
+	</script>
+	<!-- =================================== Toggle Column Input Fields Ends=================================== -->
+</body>
+
+</html>

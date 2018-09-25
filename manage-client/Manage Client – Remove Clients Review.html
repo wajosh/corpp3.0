@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../resources/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-base.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-media-small.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-media-medium.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-ui.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap-table.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-toolbar.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-export.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-filter-control.js"></script>
+	<script src="../resources/js/angular.min.js"></script>
+	<script src="../resources/js/app.js"></script>
+</head>
+
+<body ng-app="app">
+	<main-header> </main-header>
+	<main-nav-tp> </main-nav-tp>
+
+	<div class="select-entity-eservices-container-wrapper">
+		<div class="breadcrumb-wrapper hidden-xs hidden-sm">
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li>Manage Clients</li>
+			</ol>
+		</div>
+
+		<div class="header-title-wrapper">
+			<div class="common-page-title">Remove Client</div>
+			<div class="page-error"></div>
+			<div class="clearfix"></div>
+			<div class="linebreak"></div>
+			<div class="common-page-description">Review the following client entities to be removed.</div>
+		</div>
+
+
+		<div class="row-odd-wrapper">
+			<!-- Export Tool Bar -->
+			<div id="toolbar"></div>
+			<table id="table" data-toggle="table" data-toolbar="#toolbar" class="table-striped table-no-bordered" >
+				<thead>
+					<tr>
+						<th data-width="200" data-field="uenEntityID" data-sortable="true">Client UEN/ Entity ID</th>
+						<th  data-width="300" data-field="entityName" data-sortable="true">Entity Name</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>K48885J</td>
+						<td>Evergreen Technologies</td>						
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="9" class="footer-table-select-entity-eservice"></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		<!-- row even  end -->
+			<div class="doublelinebreak"></div>
+			<div class="common-page-description">Review the following client authorisation(s) to be removed.<br/>
+			Your user(s) will not be able to  represent the client(s) for the removed authorisation(s)</div>
+
+		<div class="row-odd-wrapper">
+			<!-- Export Tool Bar -->
+			<div id="toolbar"></div>
+			<table id="table" data-toggle="table" data-toolbar="#toolbar" class="table-striped table-no-bordered" >
+				<thead>
+					<tr>
+						<th data-field="clientUENEntityID" data-sortable="true">Client UEN/<br/> Entity ID</th>
+						<th data-field="entityName" data-sortable="true">Entity<br/>Name</th>
+						<th data-field="govtAgency" data-sortable="true">Govt.<br/>Agency</th>		
+						<th data-field="eService" data-sortable="true">e-Services</th>	
+						<th data-field="role" data-sortable="true">Role</th>
+						<th data-field="subUEN" data-sortable="true">Sub-UEN</th>							
+						<th data-field="addDetails" data-sortable="true">Additional<br/>Details</th>
+						<th data-field="delEffectiveDate" data-sortable="true">Delegation<br/>Effective Date</th>
+						<th data-field="delExpiryDate" data-sortable="true">Delegation<br/>Expiry Date</th>	
+					</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>K48885J</td>
+					<td>Evergreen Technologies</td>
+					<td>IRAS</td>
+					<td>IRAS e-Service 1</td>
+					<td>Approver</td>
+					<td>M12345678X</td>
+					<td>Year of Assesment: 2015</td>
+					<td>21/12/2014</td>
+					<td>20/12/2015</td>
+				</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="9" class="footer-table-select-entity-eservice"></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		<div class="clearfix"></div>
+		<div class="doublelinebreak"></div>
+	<!-- ============================== Submit-Cancel Row ============================== -->
+	<div class="row-odd-wrapper">
+		<div class="form-inline col-sm-3 col-sm-offset-5 col-xs-12 col-xs-offset-0">
+			<button type="button" class="btn-size btn btn-default btn-md">Back</button>
+			<button type="button" class="btn-size btn btn-primary btn-md">Submit</button>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	</div>
+
+
+	<main-footer> </main-footer>	
+	
+	<!-- =================================== Export DataTable =================================== -->
+	<script>
+		var $table = $('#table');
+		$(function () {
+			$('#toolbar').find('select').change(function () {
+				$table.bootstrapTable('destroy').bootstrapTable({
+					exportDataType: $(this).val()
+				});
+			});
+		})
+	</script>
+
+</body>
+
+</html>

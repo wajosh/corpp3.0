@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../resources/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-base.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-media-small.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-media-medium.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-ui.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap-table.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	 crossorigin="anonymous"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-toolbar.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-export.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-filter-control.js"></script>
+	<script src="../resources/js/angular.min.js"></script>
+	<script src="../resources/js/app.js"></script>
+</head>
+
+<body ng-app="app">
+	<main-header> </main-header>
+	<main-nav-tp> </main-nav-tp>
+	<!-- ============================== Container Wrapper Row ============================== -->
+	<div class="main-body-wrapper">
+		<div class="breadcrumb-wrapper hidden-xs hidden-sm">
+			<ol class="breadcrumb">
+				<li> <a href="#">Home</a> </li>
+				<li> Client Authorisation Migration </li>
+			</ol>
+		</div>
+		<div class="header-title-wrapper">
+			<div class="common-page-title"> Client Authorisation Migration </div>
+			<div class="client-auth-stepOne"></div>
+			<div class="clearfix"></div>
+			<div class="doublelinebreak"></div>
+			<div class="section-description">The table below shows the e-Services authorised by your clients to your entity.
+				Your edit and verify the information and this will be sent to the Client Entity for acceptance or rejection.<br />
+				Click <span class="icon-delete" style="float:left; position:absolute;cursor:none"></span> <span style="padding:0px 0px 0px 25px;">
+					to remove the users which you do not wish to use to create CorpPass Users.</span>
+				<br /> Click 'Next' to review your action and confirm to user there user details to create CorpPass Users. </div>
+		</div>
+		<!-- ============================== Table Row ============================== -->
+		<div class="row-odd-wrapper">
+			<div class="doublelinebreak"></div>
+			<!-- Export Tool Bar -->
+			<div id="toolbar">Displaying 200 out of 1987 authorisation
+				<span class="table-filter-mediumtext toggleSearch" style="padding-left:50px"><i class="fa fa-filter fa-lg"
+					 aria-hidden="true"></i> <u>Filter</u></span> </div>
+			<!-- Export Tool Bar End-->
+			<table id="table" data-toggle="table" data-pagination="true" data-search="true" data-advanced-search="true"
+			 data-click-to-select="true" data-toolbar="#toolbar" class="table-striped table-no-bordered" data-filter-control="true"
+			 data-filter-show-clear="true" data-show-export="true">
+				<thead>
+					<tr>
+						<th data-field="state"></th>
+						<th data-field="clientUENEntityID" data-sortable="true" data-filter-control="input">Client UEN /
+							<br />Entity ID</th>
+						<th data-field="entityName" data-sortable="true" data-filter-control="input">Entity
+							<br />Name</th>
+						<th data-field="govtAgency" data-sortable="true" data-filter-control="input">Govt.
+							<br />Agency</th>
+						<th data-field="eservice" data-sortable="true" data-filter-control="input">e-Service</th>
+						<th data-field="role" data-sortable="true" data-filter-control="input">Role</th>
+						<th data-field="subUen" data-sortable="true" data-filter-control="input">Sub-UEN</th>
+						<th data-field="additionalParam" data-sortable="true" data-filter-control="input">Additional
+							<br />Parameters</th>
+						<th data-field="startDate" data-sortable="true" data-filter-control="input">Delegation<br />Effective
+							<br />Date</th>
+						<th data-field="endDate" data-sortable="true" data-filter-control="input">Delegation<br />Effective
+							<br />Date</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><span class="icon-delete"></span></td>
+						<td>K4B2222J</td>
+						<td>ADK</td>
+						<td>AGD</td>
+						<td>Vendors@Gov </td>
+						<td>User</td>
+						<td>ADK1731</td>
+						<td>YoA=123</td>
+						<td>
+							<div class="form-group">
+								<div class='input-group date' id='datetimepicker1'>
+									<input type='text' class="form-control" /> <span class="input-group-addon">
+										<span class="glyphicon glyphicon-calendar"></span> </span>
+								</div>
+							</div>
+
+						</td>
+						<td>
+							<div class="form-group">
+								<div class='input-group date' id='datetimepicker1'>
+									<input type='text' class="form-control" /> <span class="input-group-addon">
+										<span class="glyphicon glyphicon-calendar"></span> </span>
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td><span class="icon-delete"></span></td>
+						<td>G4B4567J</td>
+						<td>ADK</td>
+						<td>AGD</td>
+						<td>Vendors@Gov </td>
+						<td>User</td>
+						<td>ADK1731</td>
+						<td>YoA=123</td>
+						<td>
+							<div class="form-group">
+								<div class='input-group date' id='datetimepicker1'>
+									<input type='text' class="form-control" /> <span class="input-group-addon">
+										<span class="glyphicon glyphicon-calendar"></span> </span>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="form-group">
+								<div class='input-group date' id='datetimepicker1'>
+									<input type='text' class="form-control" /> <span class="input-group-addon">
+										<span class="glyphicon glyphicon-calendar"></span> </span>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="10" class="footer-table-select-entity-eservice">1 entity(s) selected</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		<div class="clearfix"></div>
+		<!-- ============================== Submit-Cancel Row ============================== -->
+		<div class="row-odd-wrapper">
+			<div class="form-inline col-sm-3 col-sm-offset-5 col-xs-12 col-xs-offset-0">
+				<button type="button" class="btn-size btn btn-default btn-md">Cancel</button>
+				<button type="button" class="btn-size btn btn-primary btn-md">Next</button>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- ============================== Main Row End ============================== -->
+	<main-footer> </main-footer>
+	<!-- =================================== Export DataTable =================================== -->
+	<script>
+		var $table = $('#table');
+		$(function () {
+			$('#toolbar').find('select').change(function () {
+				$table.bootstrapTable('destroy').bootstrapTable({
+					exportDataType: $(this).val()
+				});
+			});
+		})
+	</script>
+	<!-- =================================== Export DataTable End=================================== -->
+	<!-- =================================== Toggle Column Input Fields=================================== -->
+	<script>
+		$(document).ready(function () {
+			$("input.clientUENEntityID, input.entityName, input.govtAgency, input.eservice, input.role, input.subUen, input.additionalParam, input.additionalParam, input.startDate, input.endDate").hide();
+			$(".toggleSearch").click(function () {
+				$("input.clientUENEntityID, input.entityName, input.govtAgency, input.eservice, input.role, input.subUen, input.additionalParam, input.additionalParam, input.startDate,  input.endDate").toggle();
+				console.log('okay');
+			});
+		});
+	</script>
+	<!-- =================================== Toggle Column Input Fields Ends=================================== -->
+	<script type="text/javascript">
+		$(function () {
+			$('#datetimepicker1').datetimepicker();
+		});
+	</script>
+</body>
+
+</html>

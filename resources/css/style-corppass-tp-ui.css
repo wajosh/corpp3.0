@@ -1,0 +1,1025 @@
+/*------------------------------------------------
+			Third Party Delegation Style
+------------------------------------------------ */
+
+/*------------------------------------------------
+			Common UI Style 
+------------------------------------------------ */
+
+.bootstrap-table .table:not(.table-condensed) > tbody > tr > td {
+    padding: 5px;
+    padding-bottom: 0px;
+}
+tbody.table-enterDetails {
+    display: block;
+}
+thead.table-enterDetails {
+    float: left;
+    width: 587px;
+}
+tbody.table-enterDetails {
+    height: 300px;
+    width: 587px;
+    float: left;
+    overflow-y: auto;
+    /* Trigger vertical scroll    */
+    
+    overflow-x: hidden;
+    /* Hide the horizontal scroll */
+}
+thead.table-aap-enterDetails {
+    float: left;
+    width: 537px;
+}
+tbody.table-aap-enterDetails {
+    height: 300px;
+    width: 537px;
+    float: left;
+    overflow-y: auto;
+    /* Trigger vertical scroll    */
+    
+    overflow-x: hidden;
+    /* Hide the horizontal scroll */
+}
+td.add-param-tbl-col-4 {
+    width: 115px;
+}
+td.add-param-tbl-col-6 {
+    width: 327px;
+}
+#toolbar>.table-filter-e-service-profile {
+    color: #205baa;
+    cursor: pointer;
+    font-weight: bold;
+    top: 5px;
+}
+#toolbar>.table-filter.toggleSearch,
+#toolbar>.table-filter-e-service-profile,
+#toolbar>.table-filter-inline-one.toggleSearch,
+#toolbar>.table-filter-inline-two.toggleSearch,
+#toolbar>.table-filter-inline-three.toggleSearch,
+.table-filter-selecteservices.toggleSearch,
+.table-filter-viewentityeservices.toggleSearch,
+.table-filter-assigneservices.toggleSearch,
+.table-filter-myprofile-eservices.toggleSearch,
+.table-filter-manage-client-esrvcs,
+.table-filter-authorise-TP,
+.table-filter-shorttext,
+.table-filter-mediumtext,
+.table-filter-longtext,
+.table-filter-only,
+.table-filter-only-insidetab,
+.table-filter-singleLeftbtn,
+.table-filter-twoMediumLeftbtn,
+.table-filter-twoWideLeftbtn,
+.table-filter-twoWiderLeftbtn,
+.table-filter-threeLargeLeftbtn {
+    cursor: pointer;
+}
+#toolbar>.table-filter.toggleSearch {
+    left: 600px;
+}
+#toolbar>.table-filter-e-service-profile {
+    margin-left: 100px;
+}
+#toolbar>.table-filter-inline-one.toggleSearch {
+    text-indent: 280px;
+}
+#toolbar>.table-filter-inline-two.toggleSearch {
+    text-indent: 366px;
+}
+#toolbar>.table-filter-inline-three.toggleSearch {
+    text-indent: 390px;
+}
+.table-filter-selecteservices.toggleSearch {
+    text-indent: 420px;
+}
+.table-filter-viewentityeservices.toggleSearch {
+    text-indent: 380px;
+}
+.table-filter-assigneservices.toggleSearch {
+    text-indent: 240px;
+}
+.table-filter-myprofile-eservices.toggleSearch {
+    text-indent: 295px;
+}
+.table-filter-manage-client-esrvcs {
+    text-indent: 56px;
+}
+.table-filter-shorttext {
+    text-indent: 359px;
+}
+.table-filter-mediumtext {
+    text-indent: 240px;
+}
+.table-filter-longtext {
+    text-indent: 155px;
+}
+.table-filter-singleLeftbtn {
+    float: right;
+    padding-left: 261px;
+}
+.table-filter-twoWideLeftbtn {
+    text-indent: 126px;
+}
+.table-filter-twoWiderLeftbtn {
+    text-indent: 42px;
+}
+.table-filter-twoMediumLeftbtn {
+    text-indent: 165px;
+}
+.table-filter-threeLargeLeftbtn {
+    float: right;
+    padding-left: 134px;
+}
+.table-filter-only {
+    text-indent: 556px;
+}
+.table-filter-only-insidetab {
+    text-indent: 530px;
+}
+/* Button Reject */
+
+.btn-reject {
+    background-color: #e60000;
+    border-color: #e60000;
+    color: #fff;
+}
+.btn-reject:hover,
+.btn-reject:focus,
+.btn-reject:active,
+.btn-reject.active {
+    background-color: #cd0000;
+    border-color: #b30000;
+    color: #fff;
+}
+.btn-reject.disabled:hover,
+.btn-reject.disabled:focus,
+.btn-reject.disabled:active,
+.btn-reject.disabled.active,
+.btn-reject[disabled]:hover,
+.btn-reject[disabled]:focus,
+.btn-reject[disabled]:active,
+.btn-reject[disabled].active,
+fieldset[disabled] .btn-reject:hover,
+fieldset[disabled] .btn-reject:focus,
+fieldset[disabled] .btn-reject:active,
+fieldset[disabled] .btn-reject.active {
+    background-color: #e60000;
+    border-color: #e60000;
+    color: #fff;
+}
+/* Button Reject End*/
+
+.icon-delete-disable {
+    width: 23px;
+    height: 23px;
+    background: url(../img/icons_table-dustbin.png);
+    background-repeat: no-repeat;
+    background-position: -24px -3px;
+    float: left;
+    cursor: not-allowed;
+}
+thead.dtTHead {
+    font-size: 12px;
+}
+.trilinebreak {
+    margin: 5.5em 0;
+    /* FF for instance */
+    
+    line-height: 5em;
+    /* chrome for instance */
+}
+.form-input-view {
+    font-weight: bold;
+    position: relative;
+    color: #2a2d33;
+}
+/* Common LandingPage Tab */
+
+.common-landingpage-tab {
+    margin: 50px 0px 0px 0px;
+}
+li#tab-0.common-landingpage-first-tab.active {
+    border-right: 0px;
+    border-left: 0px;
+}
+li#tab-1.common-landingpage-second-tab.active {
+    border-right: 0px;
+    border-left: 0px;
+}
+li#tab-3.common-landingpage-third-tab.active {
+    border-right: 0px;
+    border-left: 0px;
+}
+li.common-landingpage-first-tab {
+    border-top: 3px solid #1f5aab;
+    border-right: 1px solid #c0c0c0;
+    border-left: 1px solid #c0c0c0;
+}
+li.common-landingpage-second-tab {
+    border-top: 3px solid #24b9a2;
+    border-right: 1px solid #c0c0c0;
+    border-left: 1px solid #c0c0c0;
+}
+li.common-landingpage-third-tab {
+    border-top: 3px solid #f15a29;
+    border-right: 1px solid #c0c0c0;
+    border-left: 1px solid #c0c0c0;
+}
+.nav-tabs>li.common-landingpage-first-tab>a:hover {
+    margin-right: 0px;
+    background-color: #1f5aab;
+    border-radius: 0px;
+    font-weight: bold;
+    color: #fff;
+}
+.nav-tabs>li.common-landingpage-second-tab>a:hover {
+    margin-right: 0px;
+    background-color: #24b9a2;
+    border-radius: 0px;
+    font-weight: bold;
+    color: #fff;
+}
+.nav-tabs>li.common-landingpage-third-tab>a:hover {
+    margin-right: 0px;
+    background-color: #f15a29;
+    border-radius: 0px;
+    font-weight: bold;
+    color: #fff;
+}
+/* Overide Tab Rounded Corner Radiuos to Zero    */
+
+.common-landingpage-tab.nav-tabs>li.active>a,
+.common-landingpage-tab.nav-tabs>li.active>a:focus,
+.common-landingpage-tab.nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    border-radius: 0px;
+    height: 60px;
+    padding: 20px 40px 0px 40px;
+    font-weight: bold;
+    border-left: 0px;
+    border-right: 0px;
+}
+.common-landingpage-second-tab.nav-tabs > li,
+.common-landingpage-second-tab.nav-pills > li {
+    float: none;
+    display: inline-block;
+    zoom: 1;
+    border-top: 3px solid #24b9a2;
+}
+.common-landingpage-tab.nav-tabs > li,
+.common-landingpage-tab.nav-pills > li {
+    float: none;
+    display: inline-block;
+    *display: inline;
+    /* ie7 fix */
+    
+    zoom: 1;
+    /* hasLayout ie7 trigger */
+}
+.common-landingpage-tab.nav-tabs,
+.common-landingpage-tab.nav-pills {
+    text-align: center;
+}
+/*  Common LandingPage End */
+/* Common Tab */
+
+.common-tab {
+    margin: 50px 0px 0px 0px;
+}
+li.common-first-tab.active,
+li.common-second-tab.active,
+li.common-third-tab.active,
+li.common-fourth-tab.active,
+li.common-fifth-tab.active {
+    border-right: 1px solid #c0c0c0;
+    border-left: 1px solid #c0c0c0;
+    border-top: 3px solid #205baa;
+}
+li.common-first-tab,
+li.common-second-tab,
+li.common-third-tab,
+li.common-fourth-tab,
+li.common-fifth-tab {
+    border-top: 1px solid #c0c0c0;
+    border-right: 1px solid #c0c0c0;
+    border-left: 1px solid #c0c0c0;
+}
+.nav-tabs>li.common-first-tab>a:hover,
+.nav-tabs>li.common-second-tab>a:hover,
+.nav-tabs>li.common-third-tab>a:hover,
+.nav-tabs>li.common-fourth-tab>a:hover,
+.nav-tabs>li.common-fifth-tab>a:hover {
+    margin-right: 0px;
+    border-radius: 0px;
+    font-weight: bold;
+    color: #000;
+}
+/* Overide Tab Rounded Corner Radiuos to Zero    */
+
+.common-tab.nav-tabs>li.active>a,
+.common-tab.nav-tabs>li.active>a:focus,
+.common-tab.nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    border-radius: 0px;
+    height: 60px;
+    padding: 20px 40px 0px 40px;
+    font-weight: bold;
+    border-left: 0px;
+    border-right: 0px;
+}
+.common-second-tab.nav-tabs > li,
+.common-second-tab.nav-pills > li {
+    float: none;
+    display: inline-block;
+    zoom: 1;
+    border-top: 3px solid #24b9a2;
+}
+.common-tab.nav-tabs > li,
+.common-tab.nav-pills > li {
+    float: none;
+    display: inline-block;
+    *display: inline;
+    /* ie7 fix */
+    
+    zoom: 1;
+    /* hasLayout ie7 trigger */
+}
+.common-tab.nav-tabs,
+.common-tab.nav-pills {
+    text-align: center;
+}
+/*  Common Tab End */
+/*  Common Third Segment */
+
+.third-segment-container {
+    height: 159px;
+    width: 260px;
+    border: 1px solid #e6e7e8;
+    padding: 40px 0px 0px 0px;
+    margin: 0px 20px 100px 0px;
+}
+.title-third-segment {
+    color: #f15a29;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0px 0px 0px 15px;
+}
+.title-desc-third-segment {
+    color: #f15a29;
+    text-align: left;
+    font-size: .75em;
+    font-weight: normal;
+    padding: 0px 0px 0px 15px;
+}
+a>.third-segment-container.col-sm-3:hover {
+    background-color: #f15a29;
+    color: #fff;
+}
+a>.third-segment-container.col-sm-3:hover>.title-third-segment,
+a>.third-segment-container.col-sm-3:hover>.title-desc-third-segment {
+    color: #fff;
+}
+/*  Common Third Segment End */
+
+.file-img-nextstep-confirmation {
+    width: 60px;
+    height: 60px;
+    background: url(../img/icons_customize.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: -15px 0px;
+}
+.file-img-approved-nextstep-confirmation {
+    width: 60px;
+    height: 60px;
+    background: url(../img/icons_approved-grey.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: -15px 0px;
+}
+.file-img-mgUser-nextstep-confirmation {
+    width: 60px;
+    height: 60px;
+    background: url(../img/icons_manage_user_account-grey.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: -15px 0px;
+}
+/*------------------------------------------------
+			Common UI Style End
+------------------------------------------------ */
+
+.periodlabel {
+    position: relative;
+    top: 3px;
+    left: 6px;
+}
+.right-panel-aap-wrapper {
+    margin: 56px 0px 0px 0px;
+    max-width: 400px;
+    height: 426px;
+    border: 1px solid #f9fafc;
+    background-color: #f9fafc;
+    overflow-y: scroll;
+}
+.right-panel-tp-wrapper {
+    margin: 19px 0px 0px 0px;
+    max-width: 400px;
+    height: 426px;
+    border: 1px solid #f9fafc;
+    background-color: #f9fafc;
+    overflow-y: scroll;
+}
+.right-panel-param-tile-request {
+    padding: 20px 0px 0px 15px;
+}
+/*------------------------------------------------
+		Authorise Third Party
+------------------------------------------------ */
+
+.approvalselection {
+    position: relative;
+    top: -5px;
+    left: 5px;
+}
+.form-control-aap {
+    width: 95%;
+}
+.aap-icon {
+    float: right;
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    top: -40px;
+}
+.table-filter-assign-access-profile {
+    text-indent: 380px;
+    cursor: pointer;
+}
+.table-filter-view-useraccess {
+    text-indent: 180px;
+    cursor: pointer;
+}
+.table-filter-assign-access-eservice {
+    text-indent: 280px;
+    cursor: pointer;
+}
+.rejectselection {
+    position: relative;
+    top: -5px;
+    left: 55px;
+}
+.field-wrapper-approval {
+    left: 50px;
+    position: relative;
+}
+.th-inner-ATP {
+    width: 265px;
+}
+.bold-class {
+    font-weight: bolder;
+}
+.th-inner-request {
+    width: 120px;
+}
+.common-page-title-ATP {
+    font-weight: bolder;
+    font-family: inherit;
+    font-size: 1.95em;
+    padding: 10px 0px 20px 0px;
+}
+.common-page-title-approve {
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 1.95em;
+    padding: 10px 0px 20px 0px;
+    line-height: 80%;
+}
+.common-page-title-approvee {
+    font-size: 0.95em;
+    padding: 0px 0px 0px 0px;
+}
+.common-page-title-reject {
+    font-weight: bold;
+    font-size: 1.85em;
+    padding: 0px 0px 0px 0px;
+    line-height: 80%;
+}
+.inputfield-display-request {
+    position: relative;
+    left: 20px;
+    top: 7px !important;
+    color: #000;
+    padding: 0px 0px 0px 0px !important;
+}
+.common-image-progress-size {
+    width: 370px;
+    height: auto;
+}
+.common-image-progress-review-size {
+    width: 170px;
+    height: auto;
+}
+.news-image-small {
+    width: 40px;
+    height: auto;
+}
+.btn-float {
+    float: right;
+}
+.table-new-image-small {
+    width: 35px;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+}
+.request-image-small {
+    width: 40px;
+    height: auto;
+    left: -5px;
+    position: relative;
+}
+.right-panel-wrapper-ATP {
+    margin: 54px 0px 0px 0px;
+    max-width: 400px;
+    height: 453px;
+    top: -35px;
+    position: relative;
+    border: 1px solid #f9fafc;
+    background-color: #f9fafc;
+    overflow-y: scroll;
+}
+input.form-control-ATP {
+    width: 250px;
+}
+input.form-control-request {
+    left: -20px;
+    position: relative;
+    width: 250px;
+}
+input.form-control-enterdetails {
+    width: 349px;
+}
+label.request.col-sm-2.control-label {
+    margin-left: 14px;
+    width: 200px;
+    text-align: left;
+}
+.section-title-request {
+    font-size: 1.3em;
+    font-weight: 900;
+    padding: 10px 0px 10px 0px;
+    left: 19px;
+    position: relative;
+}
+.section-title-approval {
+    font-size: 1.0em;
+    padding: 10px 0px 10px 0px;
+}
+.empty-footer-table-approval {
+    background-color: #e6e7e8;
+    text-align: center;
+    height: 36px;
+}
+.periodselection {
+    position: relative;
+    left: 5px;
+}
+.td-manage-request {
+    font-weight: bold;
+    color: blue;
+}
+li.third-party-tab {
+    border-top: 3px solid red;
+    border-right: 1px solid #c0c0c0;
+    border-left: 1px solid #c0c0c0;
+}
+/*------------------------------------------------
+		Authorise Third Party End
+------------------------------------------------ */
+/*------------------------------------------------
+			Third Party Delegation
+------------------------------------------------ */
+
+.margin-left-segment {
+    margin-left: 14%;
+}
+.icon-manage-clients,
+.icon-requestForClientAuthorisation,
+.icon-assignClientseService,
+.icon-manage-tp-entities,
+.icon-authorise-tp-entities,
+.icon-authorise-tp-agents {
+    width: 58px;
+    height: 58px;
+    margin: 0px;
+}
+.icon-authorise-tp-entities {
+    background-image: url("../img/icons-clients-thirdparty.png");
+    background-position: -230px 0px;
+    margin: 0 auto;
+}
+.icon-manage-tp-entities {
+    background-image: url("../img/icons-clients-thirdparty.png");
+    background-position: 0px 0px;
+    margin: 0 auto;
+}
+.icon-manage-clients {
+    background-image: url("../img/icons-clients-thirdparty.png");
+    background-position: 0px 0px;
+    margin: 0 auto;
+}
+.icon-assignClientseService {
+    background-image: url("../img/icons-clients-thirdparty.png");
+    background-position: -116px 0px;
+    margin: 0 auto;
+}
+.icon-requestForClientAuthorisation {
+    background-image: url("../img/icons-clients-thirdparty.png");
+    background-position: -230px 0px;
+    margin: 0 auto;
+}
+a>.third-segment-container.col-sm-3:hover>.icon-authorise-tp-entities {
+    background-image: url("../img/icons-clients-thirdparty.png");
+    background-position: -288px 0px;
+    margin: 0 auto;
+}
+a>.third-segment-container.col-sm-3:hover>.icon-manage-tp-entities {
+    background-image: url("../img/icons-clients-thirdparty.png");
+    background-position: -58px 0px;
+    margin: 0 auto;
+}
+a>.third-segment-container.col-sm-3:hover>.icon-manage-clients {
+    background-image: url("../img/icons-clients-thirdparty.png");
+    background-position: -58px 0px;
+    margin: 0 auto;
+}
+a>.third-segment-container.col-sm-3:hover>.icon-assignClientseService {
+    background-image: url("../img/icons-clients-thirdparty.png");
+    background-position: -175px 0px;
+    margin: 0 auto;
+}
+a>.third-segment-container.col-sm-3:hover>.icon-requestForClientAuthorisation {
+    background-image: url("../img/icons-clients-thirdparty.png");
+    background-position: -288px 0px;
+    margin: 0 auto;
+}
+.icon-manage-tp-entity,
+.icon-authorise-tp-entity,
+.icon-mgt-tp-entity-autresquest {
+    width: 58px;
+    height: 58px;
+    margin: 0px;
+}
+.icon-manage-tp-entity {
+    background-image: url("../img/icons-clients-thirdparty.png");
+    background-position: 0px 0px;
+    margin: 0 auto;
+}
+.icon-authorise-tp-entity {
+    background-image: url("../img/icons-clients-thirdparty.png");
+    background-position: -230px 0px;
+    margin: 0 auto;
+}
+.icon-mgt-tp-entity-autresquest {
+    background-image: url("../img/icons-clients-thirdparty.png");
+    background-position: 113px 0px;
+    margin: 0 auto;
+}
+a>.third-segment-container.col-sm-3:hover>.icon-manage-tp-entity {
+    background-image: url("../img/icons-clients-thirdparty.png");
+    background-position: -58px 0px;
+    margin: 0 auto;
+}
+a>.third-segment-container.col-sm-3:hover>.icon-authorise-tp-entity {
+    background-image: url("../img/icons-clients-thirdparty.png");
+    background-position: -288px 0px;
+    margin: 0 auto;
+}
+a>.third-segment-container.col-sm-3:hover>.icon-mgt-tp-entity-autresquest {
+    background-image: url("../img/icons-clients-thirdparty.png");
+    background-position: 58px 0px;
+    margin: 0 auto;
+}
+/* Authorise Third Party */
+
+.authorise-tp-stepOne {
+    width: 400px;
+    height: 70px;
+    float: left;
+}
+.authorise-tp-stepTwo,
+.authorise-tp-stepThree,
+.authorise-tp-stepFour {
+    width: 425px;
+    height: 70px;
+    float: left;
+}
+.authorise-tp-stepOne {
+    background: url(../img/step-progress/select-tp-entity-services.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+.authorise-tp-stepTwo {
+    background: url(../img/step-progress/select-tp-entity-services.png);
+    background-position: -427px 0px;
+    background-repeat: no-repeat;
+}
+.authorise-tp-stepThree {
+    background: url(../img/step-progress/select-tp-entity-services.png);
+    background-position: -856px 0px;
+    background-repeat: no-repeat;
+}
+.authorise-tp-stepFour {
+    background: url(../img/step-progress/select-tp-entity-services.png);
+    background-position: -1282px 0px;
+    background-repeat: no-repeat;
+}
+/* Authorise Third Party End*/
+/* Assign Access Profile */
+
+.assign-access-profile-stepOne,
+.assign-access-profile-stepTwo,
+.assign-access-profile-stepThree,
+.assign-access-profile-stepFour {
+    width: 430px;
+    height: 70px;
+    float: left;
+}
+.assign-access-profile-stepOne {
+    background: url(../img/step-progress/assign-access-profile.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+.assign-access-profile-stepTwo {
+    background: url(../img/step-progress/assign-access-profile.png);
+    background-position: -425px 0px;
+    background-repeat: no-repeat;
+}
+.assign-access-profile-stepThree {
+    background: url(../img/step-progress/assign-access-profile.png);
+    background-position: -853px 0px;
+    background-repeat: no-repeat;
+}
+.assign-access-profile-stepFour {
+    background: url(../img/step-progress/assign-access-profile.png);
+    background-position: -1278px 0px;
+    background-repeat: no-repeat;
+}
+/* Assign Access Profile End*/
+/* Assign User Management Profile */
+
+.assign-user-mgt-stepOne,
+.assign-user-mgt-stepTwo,
+.assign-user-mgt-stepThree {
+    width: 430px;
+    height: 70px;
+    float: left;
+}
+.assign-user-mgt-stepOne {
+    background: url(../img/step-progress/assign-user-mgt-profile.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+.assign-user-mgt-stepTwo {
+    background: url(../img/step-progress/assign-user-mgt-profile.png);
+    background-position: -437px 0px;
+    background-repeat: no-repeat;
+}
+.assign-user-mgt-stepThree {
+    background: url(../img/step-progress/assign-user-mgt-profile.png);
+    background-position: -867px 0px;
+    background-repeat: no-repeat;
+}
+/* Assign User Management Profile End*/
+/* Request Client Authorisation */
+
+.request-client-stepOne,
+.request-client-stepTwo,
+.request-client-stepThree {
+    width: 420px;
+    height: 70px;
+    float: left;
+}
+.request-client-stepFour {
+    width: 440px;
+    height: 70px;
+    float: left;
+}
+.request-client-stepOne {
+    background: url(../img/step-progress/request-client-authorisation.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+.request-client-stepTwo {
+    background: url(../img/step-progress/request-client-authorisation.png);
+    background-position: -426px 0px;
+    background-repeat: no-repeat;
+}
+.request-client-stepThree {
+    background: url(../img/step-progress/request-client-authorisation.png);
+    background-position: -849px 0px;
+    background-repeat: no-repeat;
+}
+.request-client-stepFour {
+    background: url(../img/step-progress/request-client-authorisation.png);
+    background-position: -1276px 0px;
+    background-repeat: no-repeat;
+}
+/* Request Client Authorisation End*/
+/* Approve Third Party */
+
+.approve-tp-stepOne,
+.approve-tp-stepTwo {
+    width: 174px;
+    height: 70px;
+    float: left;
+}
+.approve-tp-stepOne {
+    background: url(../img/step-progress/approve-tp-authorisation.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+.approve-tp-stepTwo {
+    background: url(../img/step-progress/approve-tp-authorisation.png);
+    background-position: -166px 0px;
+    background-repeat: no-repeat;
+}
+.client-approve-request-lp.common-landingpage-tab.nav.nav-tabs {
+    margin: 160px 0px 0px 0px;
+}
+/* Approve Third Party End*/
+/* Assign e-Services Third Party */
+
+.assign-selected-eservices-progress-tp-stepOne,
+.assign-selected-eservices-progress-tp-stepTwo,
+.assign-selected-eservices-progress-tp-stepThree,
+.assign-selected-eservices-progress-tp-stepFour {
+    width: 381px;
+    height: 65px;
+    float: left;
+}
+.assign-selected-eservices-progress-tp-stepOne {
+    background: url(../img/step-progress/assign-selected-eservices-tp.png);
+    background-repeat: no-repeat;
+}
+.assign-selected-eservices-progress-tp-stepTwo {
+    background: url(../img/step-progress/assign-selected-eservices-tp.png);
+    background-position: -382px 0px;
+    background-repeat: no-repeat;
+}
+.assign-selected-eservices-progress-tp-stepThree {
+    background: url(../img/step-progress/assign-selected-eservices-tp.png);
+    background-position: -794px 0px;
+    background-repeat: no-repeat;
+}
+.assign-selected-eservices-progress-tp-stepFour {
+    background: url(../img/step-progress/assign-selected-eservices-tp.png);
+    background-position: -1178px 0px;
+    background-repeat: no-repeat;
+}
+/* Assign e-Services Third Party End*/
+/* Assign Client e-Services Third Party*/
+
+.assign-client-eservices-progress-tp-stepOne,
+.assign-client-eservices-progress-tp-stepTwo,
+.assign-client-eservices-progress-tp-stepThree {
+    width: 280px;
+    height: 66px;
+    float: left;
+}
+.assign-client-eservices-progress-tp-stepOne {
+    background: url(../img/step-progress/assign-client-eservices-tp.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+.assign-client-eservices-progress-tp-stepTwo {
+    background: url(../img/step-progress/assign-client-eservices-tp.png);
+    background-position: -278px 0px;
+    background-repeat: no-repeat;
+}
+.assign-client-eservices-progress-tp-stepThree {
+    background: url(../img/step-progress/assign-client-eservices-tp.png);
+    background-position: -565px 0px;
+    background-repeat: no-repeat;
+}
+.assign-select-client-eservices-progress-tp-stepOne,
+.assign-select-client-eservices-progress-tp-stepTwo {
+    width: 389px;
+    height: 66px;
+    float: left;
+}
+.assign-select-client-eservices-progress-tp-stepOne {
+    background: url(../img/step-progress/assign-selected-eservices-tp.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+.assign-select-client-eservices-progress-tp-stepTwo {
+    background: url(../img/step-progress/assign-selected-eservices-tp.png);
+    background-position: -278px 0px;
+    background-repeat: no-repeat;
+}
+/* Assign Client e-Services Third Party End*/
+/* Edit Entity e-Services Third Party */
+
+.edit-entity-esrvc-tp-stepOne,
+.edit-entity-esrvc-tp-stepTwo {
+    width: 168px;
+    height: 66px;
+    float: left;
+}
+.edit-entity-esrvc-tp-stepOne {
+    background: url(../img/step-progress/edit-entity-eservices-tp.png);
+    background-position: -168px 0px;
+    background-repeat: no-repeat;
+}
+/* Edit Entity e-Services Third Party End*/
+/* Edit e-Services Assignment Third Party */
+
+.edit-esrvc-assignment-tp-stepOne,
+.edit-esrvc-assignment-tp-stepTwo {
+    width: 168px;
+    height: 66px;
+    float: left;
+}
+.edit-esrvc-assignment-tp-stepOne {
+    background: url(../img/step-progress/edit-eservices-assignment-tp.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+.edit-esrvc-assignment-tp-stepTwo {
+    background: url(../img/step-progress/edit-eservices-assignment-tp.png);
+    background-position: -168px 0px;
+    background-repeat: no-repeat;
+}
+/* Edit e-Services Assignment Third Party End*/
+/* Edit Client e-Services Third Party */
+
+.edit-client-esrvc-tp-stepOne,
+.edit-client-esrvc-tp-stepTwo {
+    width: 168px;
+    height: 66px;
+    float: left;
+}
+.edit-client-esrvc-tp-stepOne {
+    background: url(../img/step-progress/edit-client-eservices-tp.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+.edit-client-esrvc-tp-stepTwo {
+    background: url(../img/step-progress/edit-client-eservices-tp.png);
+    background-position: -168px 0px;
+    background-repeat: no-repeat;
+}
+/* Edit Client e-Services Third Party End*/
+/* Edit-ThirdParty-eService-Authorisation Third Party */
+
+.edit-eSrvc-auth-tp-stepOne,
+.edit-eSrvc-auth-tp-stepTwo {
+    width: 168px;
+    height: 69px;
+    float: left;
+}
+.edit-eSrvc-auth-tp-stepOne {
+    background: url(../img/step-progress/edit-thirdParty-eService-authorisation-tp.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+.edit-eSrvc-auth-tp-stepTwo {
+    background: url(../img/step-progress/edit-thirdParty-eService-authorisation-tp.png);
+    background-position: -168px 0px;
+    background-repeat: no-repeat;
+}
+/* Edit-ThirdParty-eService-Authorisation Third Party End*/
+/* Client Authorisation Migration */
+
+.client-auth-stepOne,
+.client-auth-stepTwo {
+    width: 168px;
+    height: 69px;
+    float: left;
+}
+.client-auth-stepOne {
+    background: url(../img/step-progress/client-auth-migration.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+.client-auth-stepTwo {
+    background: url(../img/step-progress/client-auth-migration.png);
+    background-position: -168px 0px;
+    background-repeat: no-repeat;
+}
+/* Client Authorisation Migration End*/
+/*------------------------------------------------
+			Third Party Delegation End
+------------------------------------------------ */

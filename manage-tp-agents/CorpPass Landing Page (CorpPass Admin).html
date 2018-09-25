@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../resources/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-base.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-ui.css" rel="stylesheet"> </head>
+	<script src="../resources/js/angular.min.js"></script>
+	<script src="../resources/js/app.js"></script>
+</head>
+
+<body ng-app="app">
+	<main-header> </main-header>
+	<main-nav-tp> </main-nav-tp>
+
+	<div class="clearfix visible-xs" ></div>
+	<div class="user-landingpage-container-wrapper">
+		<div class="profile-stripe-wrapper">
+			<div class="landingpage-userprofile-head-wrapper">
+				<div class="profile-title-header">Welcome to <span class="corppass-title">CorpPass,</span></div>
+				<div class="profile-entity-name">John Tan</div>
+				<p class="profile-notification">Update your password before it expires on 30 Dec 2017</p>
+				<div class="notification-stripe-wrapper">
+					<div class="notification-wrapper">
+						<div class="icon-new col-sm-1 col-sm-offset-2"></div>
+						<div class="notification-message col-sm-7">11 new e-Services are available on CorpPass as of 31 Jul 2016</div>
+						<!--<div class="notification-description col-sm-8">You have access to all e-Services available on CorpPass. Click <a href="" class="link-label">here</a> to view and edit</div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- =================================== Common Landingpage Tab Row =================================== -->
+		<ul class="common-landingpage-tab nav nav-tabs">
+			<li class="common-landingpage-first-tab"><a href="#userAccounts" data-toggle="tab">User Accounts</a></li>
+			<li class="common-landingpage-second-tab"><a href="#eServicesAccess" data-toggle="tab">e-Service Access</a></li>
+			<li class="common-landingpage-third-tab  active"><a href="#thirdParty" data-toggle="tab">Third Party</a></li>		
+
+		</ul>
+
+		<div class="tab-content ">
+
+			<div id="eServicesAccess" class="tab-pane e-services-access-wrapper col-sm-11  col-sm-offset-1">
+			<br/>
+			e-Service Access
+			<!--
+				<div class="row">
+					<div class="change-entity-profile"><a href="" class="link-label">Change Entity Profile</a></div>
+					<a href="#" class="">
+						<div class="view-entity-eservices-access col-sm-3">
+							<div class="icon-view-entity-eservices-access"></div>
+							<div class="title-view-entity-eservices-access">View Entity's e-Services Access</div>
+							<div class="title-desc-view-entity-eservices-access">View and edit your entity’s current e-Service access</div>
+						</div>
+					</a>
+					<a href="#" class="">
+						<div class="select-entity-eservices col-sm-3">
+							<div class="icon-select-entity-eservices"></div>
+							<div class="title-select-entity-eservices">Select entity's e-Services</div>
+							<div class="title-desc-select-entity-eservices">Select e-Services that your entity will use</div>
+						</div>
+					</a>
+					<a href="#" class="">
+						<div class="assign-select-eservices col-sm-3">
+							<div class="icon-assign-select-eservices"></div>
+							<div class="title-assign-select-eservices">Assign selected e-Services</div>
+							<div class="title-desc-assign-select-eservices">Assign e-Services access to your entity's users and user groups</div>
+						</div>
+					</a>
+				</div>-->
+			</div>  
+			<!-- =================================== e-Services Access   End=================================== -->
+			<!-- =================================== User Accounts Tab 1 Row =================================== -->
+			<div id="userAccounts" class="tab-pane user-accounts-wrapper col-sm-11  col-sm-offset-1">
+			
+			<br/>
+			User Accounts
+			 <!--<div class="row">
+					<div class="change-entity-profile"><a href="" class="link-label">Change Entity Profile</a></div>
+					<a href="#">
+						<div class="create-user-accounts col-sm-2">
+							<div class="icon-create-user-accounts"></div>
+							<div class="title-create-user-accounts">Create User Accounts</div>
+							<div class="title-desc-create-user-accounts">Enter user details</div>
+						</div>
+					</a>
+					<a href="#">
+						<div class="manage-user-accounts col-sm-2">
+							<div class="icon-manage-user-accounts"></div>
+							<div class="title-manage-user-accounts">Manage User Accounts</div>
+							<div class="title-desc-manage-user-accounts">View and edit your entity's user account details</div>
+						</div>
+					</a>
+					<a href="#">
+						<div class="create-user-groups col-sm-2">
+							<div class="icon-create-user-groups"></div>
+							<div class="title-create-user-groups">Create User Groups</div>
+							<div class="title-desc-create-user-groups">Create user grops to manage multiple users easily</div>
+						</div>
+					</a>
+					<a href="#">
+						<div class="manage-user-groups col-sm-2">
+							<div class="icon-manage-user-groups"></div>
+							<div class="title-manage-user-groups">Manage User Groups</div>
+							<div class="title-desc-manage-user-groups">View and edit your entity's user groups.</div>
+						</div>
+					</a>
+					<div class="clearfix"></div>
+
+					<div class="user-account-help-support-wrapper">
+						<div class="user-account-helpsupport-title">Help & Support</div>
+						<div class="col-sm-4 col-sm-offset-2  col-xs-12 divider">
+							<div class="user-create-desc"> How to create user accounts and easily manage them in groups
+								<div class="learn-more-user-create"><a href="" class="link-label-normal">Learn more<div class="icon-caretb-learnmore"></div></a></div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-xs-12">
+							<div class="update-user-desc"> How to update your users' account status and details
+								<div class="learn-more-update-user"><a href="" class="link-label-normal">Learn more<div class="icon-caretb-learnmore"></div></a></div>
+							</div>
+						</div>
+					</div>
+
+				</div>-->
+			</div>         
+			<!-- ===================================User Accounts Tab End=================================== -->
+			<!-- =================================== e-Services Access Row =================================== -->
+			<div id="thirdParty" class="tab-pane thirdparty-wrapper col-sm-11  col-sm-offset-1   active">
+			
+		 
+				<div class="row">
+					<div class="change-entity-profile"><a href="" class="link-label">Change Entity Profile</a></div>
+					<a href="#" class="">
+						<div class="margin-left-segment third-segment-container col-sm-3">
+							<div class="icon-manage-tp-entities"></div>
+							<div class="title-third-segment">Manage Third Party Entities</div>
+
+						</div>
+					</a>
+					<a href="#" class="">
+						<div class=" third-segment-container col-sm-3">
+							<div class="icon-authorise-tp-entities"></div>
+							<div class="title-third-segment">Authorise Third Party Entities</div>
+
+						</div>
+					</a>
+
+
+				</div>
+			</div>  
+		</div>
+		
+		
+		
+						<div class="clearfix"></div>
+	 <!-- ==================== Help SUpport ==================== -->
+     <div class="user-account-help-support-wrapper">
+			<div class="user-account-helpsupport-title">Help & Support</div>
+            <div class="col-sm-4 col-sm-offset-2  col-xs-12 divider">
+                <div class="user-create-desc">
+                   How to add third party entity<br/> and easily manage them
+                    <div class="learn-more-user-create"><a href="" class="link-label-normal">Learn more<div class="icon-caretb-learnmore"></div></a></div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <div class="update-user-desc">
+                    How to authorise e-service<br/> to third party entity
+					<div class="learn-more-update-user"><a href="" class="link-label-normal">Learn more<div class="icon-caretb-learnmore"></div></a></div>
+                </div>
+            </div>
+
+        </div>
+		
+	</div>
+	<!-- =================================== Profile Body End =================================== -->
+	<div class="clearfix"></div>
+
+	<main-footer> </main-footer>	
+	
+	<script src="../resources/plugins/jquery-2.1.1/jquery-2.1.1.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>

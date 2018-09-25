@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../resources/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-base.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-ui.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap-table.css" rel="stylesheet">
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script src="../resources/js/angular.min.js"></script>
+	<script src="../resources/js/app.js"></script>
+</head>
+
+<body ng-app="app">
+	<main-header> </main-header>
+	<main-nav-tp> </main-nav-tp>
+
+	<div class="clearfix visible-xs" ></div>
+        <div class="user-landingpage-container-wrapper">
+		<div class="profile-stripe-wrapper">
+			<div class="landingpage-userprofile-head-wrapper">
+				<div class="profile-title-header">Welcome to <span class="corppass-title">CorpPass,</span></div>
+				<div class="profile-entity-name">John Tan</div>
+				<p class="profile-notification">Update your password before it expires on 30 Dec 2017</p>
+				<div class="notification-stripe-wrapper">
+					<div class="notification-wrapper">
+						<div class="icon-new col-sm-1 col-sm-offset-2"></div>
+						<div class="notification-message col-sm-7">11 new e-Services are available on CorpPass as of 31 Jul 2016</div>
+						<div class="notification-description col-sm-8">You have access to all e-Services available on CorpPass. Click <a href="" class="link-label">here</a> to view and edit</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<!-- =================================== e-Services Access Tab Row =================================== -->
+		<ul class="client-approve-request-lp common-landingpage-tab nav nav-tabs">
+			<li class="common-landingpage-first-tab"><a href="#userAccounts" data-toggle="tab">User Accounts</a></li>
+			<li class="common-landingpage-second-tab"><a href="#eServicesAccess" data-toggle="tab">e-Services Access</a></li>
+			<li class="common-landingpage-third-tab  active"><a href="#thirdParty" data-toggle="tab">Third Party</a></li>		
+		</ul>       
+		<!-- =================================== e-Services Access Tab Row End =================================== -->
+		<div class="tab-content ">
+		<div id="userAccounts" class="tab-pane col-sm-11  col-sm-offset-1">
+			<br/>
+			User Accounts
+			<div class="doublelinebreak"></div>
+		</div>  
+		<div id="eServicesAccess" class="tab-pane col-sm-11  col-sm-offset-1">
+			<br/>
+			e-Services Access
+			<div class="doublelinebreak"></div>
+		</div> 
+			<div id="thirdParty" class="tab-pane e-services-access-wrapper col-sm-11  col-sm-offset-1 active ">
+				<div class="row">
+					<div class="change-entity-profile"><a href="" class="link-label">Change Entity Profile</a></div>
+					<a href="#" class="">
+						<div class="third-segment-container col-sm-3">
+							<div class="icon-manage-tp-entity"></div>
+							<div class="title-third-segment">Manage Third Party Entity</div>
+						</div>
+					</a>
+					<a href="#" class="">
+						<div class="third-segment-container col-sm-3">
+							<div class="icon-authorise-tp-entity"></div>
+							<div class="title-third-segment">Authorise Third Party Entity</div>
+						</div>
+					</a>
+					<a href="#" class="">
+						<div class="third-segment-container col-sm-3">
+							<div class="icon-mgt-tp-entity-autresquest"></div>
+							<div class="title-third-segment">Manage Third Party Entity Authorised Request</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="clearfix"></div>
+	<!-- =================================== Footer =================================== -->
+	<main-footer></main-footer>
+	<!-- =================================== Footer End =================================== -->
+	<script src="../resources/plugins/jquery-2.1.1/jquery-2.1.1.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>

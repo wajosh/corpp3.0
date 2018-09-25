@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../resources/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-base.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-media-small.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-media-medium.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-ui.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap-table.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-toolbar.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-export.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-filter-control.js"></script>
+	<script src="../resources/js/angular.min.js"></script>
+	<script src="../resources/js/app.js"></script>
+</head>
+
+
+<body ng-app="app">
+	<main-header> </main-header>
+	<main-nav-tp> </main-nav-tp>
+
+	<!-- ============================== BreadCrumbs Row ============================== -->
+	<div class="approve-admin-success-container-wrapper">
+		<div class="breadcrumb-wrapper hidden-xs hidden-sm">
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li>View Entity's e-Service Access</li>
+                <li>View e-Service</li>
+			</ol>
+		</div>
+        <div class="header-title-wrapper">
+			<div class="common-page-title">IRAS5</div>
+			<div class="common-page-description">Income Tax 32</div>
+			<div class="page-error"></div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="doublelinebreak"></div>
+		<!-- ============================== BreadCrumbs Row End============================== -->
+        <!-- ============================== Table Row ============================== -->
+		<div class="row-odd-wrapper">
+			<ul class="common-tab nav nav-tabs">
+				<li class="common-first-tab "><a href="#common-firstTab" data-toggle="tab">e-Service Profile</a></li>
+                <li class="common-first-tab "><a href="#common-secondTab" data-toggle="tab">Assigned Users</a></li>
+				<li class="common-third-tab active"><a href="#common-thirdTab" data-toggle="tab">Authorise Third Party Agents</a></li>
+			</ul>
+			<div class="tab-content ">
+				<div id="common-firstTab" class="tab-pane e-services-access-wrapper col-sm-12 ">
+					<div class="doublelinebreak"></div> 				
+                    e-Service Profile
+				</div>
+                <div id="common-secondTab" class="tab-pane e-services-access-wrapper col-sm-12 ">
+					<div class="doublelinebreak"></div> 				
+                    Assigned Users
+				</div>
+                <div id="common-fourthTab" class="tab-pane e-services-access-wrapper col-sm-12 ">
+                    Authorise Third Party Agents
+				</div>
+                
+				<!-- =================================== Profile Row  End=================================== -->
+				<!-- =================================== Authorise e-Services Row =================================== -->
+				<div id="common-thirdTab" class="tab-pane user-accounts-wrapper col-sm-12 active">
+					<div class="doublelinebreak"></div>  <div id="transactionhistory" class="tab-pane active">
+					<div class="section-title">Authorised Third Party Agents </div>
+                    <div class="row-odd-wrapper">
+				    <div class="doublelinebreak"></div> 
+					<!-- Export Tool Bar -->
+					<div id="toolbar">
+						<span class="table-filter-only-insidetab toggleSearch"><i class="fa fa-filter fa-lg" aria-hidden="true"></i> <u>Filter</u></span>
+					</div>
+					</div>
+					<!-- Export Tool Bar End-->
+					<table id="table" data-toggle="table" data-pagination="false" data-search="true" data-advanced-search="true" data-click-to-select="true" data-toolbar="#toolbar" class="table-striped table-no-bordered" data-filter-control="true" data-filter-show-clear="true" data-show-export="true">
+						<thead>
+							<tr>
+								<th data-field="state" data-checkbox="true" ></th>
+								<th data-width="250" data-field="uenEntity" data-sortable="true" data-filter-control="input" >UEN / Entity ID</th>
+                                <th data-field="entityName" data-sortable="true"data-filter-control="input" >Entity Name</th>
+								</tr>
+						</thead>
+						<tfoot>
+							<tr>
+								<td colspan="10" class="footer-table-select-entity-eservice">0 entity(s) selected</td>
+							</tr>
+						</tfoot>
+					</table>
+			
+                    </div></div>
+		
+
+		<div class="clearfix"></div></div>
+                
+				<!-- ===================================Authorise e-Services Row End=================================== -->
+			</div>
+		</div>
+		<!-- row even  end -->
+		<div class="clearfix"></div>
+	
+	<!-- =================================== Footer =================================== -->
+    <main-footer></main-footer>
+	<!-- =================================== Footer End =================================== -->
+	<!-- =================================== Toggle Column Input Fields=================================== -->
+	<script>
+		$(document).ready(function () {
+			$("input.uenEntity, input.entityName").hide();
+			$(".toggleSearch").click(function () {
+				$("input.uenEntity, input.entityName").toggle();
+			});
+		});
+	</script>
+</body>
+
+</html>

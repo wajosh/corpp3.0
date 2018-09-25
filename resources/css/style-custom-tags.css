@@ -1,0 +1,109 @@
+.custom-tag-to-uppercase {
+    text-transform: uppercase;
+}
+
+/*------------------------------------------------
+    tooltip start
+------------------------------------------------*/
+.custom-tag-tooltip {
+    color: #343434;
+    float: right;
+}
+/*------------------------------------------------
+    tooltip end
+------------------------------------------------*/
+
+
+/*------------------------------------------------
+    password complexity checker startinput.form-control
+------------------------------------------------*/
+.is-hidden, .hidden {
+    display: none
+}
+
+input.password-error {
+    border: 1px solid red;
+}
+
+.t-form-success {
+    color: #2fa13e;
+    padding-right: 3px;
+    font-size: inherit;
+    vertical-align: top
+}
+
+.t-form-error {
+    color: #cf2010;
+    padding-right: 3px;
+    font-size: inherit;
+    vertical-align: top
+}
+
+.t-form-error .icon-exclamation, .t-form-success .icon-exclamation {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+    background: url('../img/pwd-complexity-icon.png');
+}
+
+.t-form-success .icon-exclamation {
+    background-position: -16px 0;
+}
+
+.password-complexity-checker {
+    position: relative;
+}
+
+.password-info  {
+    border: 1px solid #a4a4a4;
+    background-color: #fff;
+    position: absolute;
+    z-index: 61;
+    font-size: 14px;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.password-info > p {
+    margin: 0 0 5px 0;
+}
+
+.password-info >  ul {
+    list-style-type: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+/*------------------------------------------------
+    password complexity checker start
+------------------------------------------------*/
+
+
+/*------------------------------------------------
+    captcha start
+------------------------------------------------*/
+.captcha-box {
+    width: 85%;
+    height: 50px;
+    border-style: ridge;
+    border-width: 1px;
+    vertical-align: bottom;
+}
+
+.captcha-refresh {
+    width: 40px;
+    height: 40px;
+    background: url(../img/icon-refresh.png);
+    background-size: 60% 60%;
+    background-position: 13px 15px;
+    background-repeat: no-repeat;
+    float: right;
+    cursor:pointer
+}
+/*------------------------------------------------
+    captcha end
+------------------------------------------------*/

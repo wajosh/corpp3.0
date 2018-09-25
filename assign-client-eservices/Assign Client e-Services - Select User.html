@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../resources/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-base.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-media-small.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-media-medium.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-ui.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap-table.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	 crossorigin="anonymous"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-toolbar.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-export.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-filter-control.js"></script>
+	<script src="../resources/js/angular.min.js"></script>
+	<script src="../resources/js/app.js"></script>
+</head>
+
+<body ng-app="app">
+	<main-header> </main-header>
+	<main-nav-tp> </main-nav-tp>
+	<!-- ============================== Container Wrapper Row ============================== -->
+	<div class="main-body-wrapper">
+		<div class="breadcrumb-wrapper hidden-xs hidden-sm">
+			<ol class="breadcrumb">
+				<li> <a href="#">Home</a> </li>
+				<li> Assign Client e-Services</li>
+			</ol>
+		</div>
+		<div class="header-title-wrapper">
+			<div class="common-page-title">Assign Client e-Services</div>
+			<div class="assign-client-eservices-progress-tp-stepTwo"></div>
+			<div class="clearfix"></div>
+			<div class="trilinebreak"></div>
+			<div class="section-description">Ensure that your client(s) has authorised your Entity with e-Service(s) before
+				assigning it to your user accounts.</div>
+
+		</div>
+		<!-- ============================== Table Row ============================== -->
+		<div class="row-odd-wrapper">
+			<div class="doublelinebreak"></div>
+			<!-- Export Tool Bar -->
+			<div id="toolbar">
+				Select from your entity’s CorpPass user accounts.
+				<span class="table-filter-mediumtext toggleSearch"><i class="fa fa-filter fa-lg" aria-hidden="true"></i> <u>Filter</u></span>
+			</div>
+			<!-- Export Tool Bar End-->
+			<table id="table" data-toggle="table" data-pagination="true" data-search="true" data-advanced-search="true"
+			 data-click-to-select="true" data-toolbar="#toolbar" data-url="../common-resources/js/view-entity-eServices.json"
+			 class="table-striped table-no-bordered" data-filter-control="true" data-filter-show-clear="true" data-show-export="true">
+				<thead>
+					<tr>
+						<th data-field="state" data-checkbox="true"></th>
+						<th data-field="fullName" data-sortable="true" data-filter-control="input">Full Name</th>
+						<th data-field="emailAddress" data-sortable="true" data-filter-control="input">Email Address</th>
+						<th data-field="corpPassID" data-sortable="true" data-filter-control="input">CorpPass ID</th>
+						<th data-field="userType" data-sortable="true" data-filter-control="input">User Type</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td>John Tan</td>
+						<td>john@mail.com</td>
+						<td>IPOSF9990003L</td>
+						<td>User</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Kim Go</td>
+						<td>kim.go@mail.com</td>
+						<td>IPOSF9994566L</td>
+						<td>User</td>
+					</tr>
+
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="10" class="footer-table-select-entity-eservice">0 entity(s) selected</td>
+					</tr>
+				</tfoot>
+			</table>
+			<div>
+				<span class="cant-find-user-title">Can't find a user?</span>
+				<span class="linebreak"></span>
+				<span class="create-user-account-link">Click <a href="" class="link-label-normal">here</a> to search</span>
+			</div>
+		</div>
+
+
+		<div class="clearfix"></div>
+		<!-- ============================== Submit-Cancel Row ============================== -->
+		<div class="row-odd-wrapper">
+			<div class="form-inline col-sm-3 col-sm-offset-5 col-xs-12 col-xs-offset-0">
+				<button type="button" class="btn-size btn btn-default btn-md">Back</button>
+				<button type="button" class="btn-size btn btn-primary btn-md">Next</button>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- ============================== Main Row End ============================== -->
+
+	<main-footer> </main-footer>
+
+	<!-- =================================== Export DataTable =================================== -->
+	<script>
+		var $table = $('#table');
+		$(function () {
+			$('#toolbar').find('select').change(function () {
+				$table.bootstrapTable('destroy').bootstrapTable({
+					exportDataType: $(this).val()
+				});
+			});
+		})
+	</script>
+	<!-- =================================== Export DataTable End=================================== -->
+	<!-- =================================== Toggle Column Input Fields=================================== -->
+	<script>
+		$(document).ready(function () {
+			$("input.fullName, input.emailAddress, input.corpPassID, input.userType").hide();
+			$(".toggleSearch").click(function () {
+				$("input.fullName, input.emailAddress, input.corpPassID, input.userType").toggle();
+				console.log('okay');
+			});
+		});
+	</script>
+	<!-- =================================== Toggle Column Input Fields Ends=================================== -->
+</body>
+
+</html>

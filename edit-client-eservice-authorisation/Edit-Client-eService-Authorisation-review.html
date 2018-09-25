@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../resources/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-base.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-media-small.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-media-medium.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-ui.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap-table.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	 crossorigin="anonymous"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-toolbar.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-export.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-filter-control.js"></script>
+	<script src="../resources/js/angular.min.js"></script>
+	<script src="../resources/js/app.js"></script>
+</head>
+
+<body ng-app="app">
+	<main-header> </main-header>
+	<main-nav-tp> </main-nav-tp>
+	<!-- ============================== Container Wrapper Row ============================== -->
+	<div class="main-body-wrapper">
+		<div class="breadcrumb-wrapper hidden-xs hidden-sm">
+			<ol class="breadcrumb">
+				<li> <a href="#">Home</a> </li>
+				<li> Edit Client e-Service Authorisation</li>
+			</ol>
+		</div>
+		<div class="header-title-wrapper">
+			<div class="common-page-title">Edit Client e-Service Authorisation</div>
+			<div class="edit-client-esrvc-tp-stepTwo"></div>
+			<div class="clearfix"></div>
+			<div class="doublelinebreak"></div>
+			<div class="section-description">Verify the following details. Once submitted, the client entity will receive an
+				email notification to approve the request.</div>
+
+		</div>
+		<div class="doublelinebreak"></div>
+		<!-- ============================== Selected Third Party Entity e-Service Row ============================== -->
+		<div class="row-even-wrapper">
+			<div class="section-title">Edited e-Service(s) Authorisation(s)</div>
+			<div class="form-horizontal">
+				<div class="form-group">
+					<div class="label-wrapper">
+						<label class="govtAgency col-md-3 col-sm-4 control-label"><b>IRAS</b></label>
+					</div>
+					<div class="field-wrapper col-sm-9">
+						<ul class="e-services-list">
+							<li>IRAS e-Service 1
+								<ul class="param-list-wrapper">
+									<div class="label-wrapper">
+										<label class="paramEntityeservices col-md-4 col-sm-5 control-label">Role: :</label>
+									</div>
+									<div class="label-wrapper col-sm-7 control-label " style="text-align:left">ADK1731</div>
+								</ul>
+								<div class="clearfix"></div>
+								<ul class="param-list-wrapper">
+									<div class="label-wrapper">
+										<label class="paramEntityeservices col-md-4 col-sm-5 control-label">Effective date: </label>
+									</div>
+									<div class="label-wrapper col-sm-7 control-label " style="text-align:left">01/09/2016</div>
+								</ul>
+								<div class="clearfix"></div>
+								<ul class="param-list-wrapper">
+									<div class="label-wrapper">
+										<label class="paramEntityeservices col-md-4 col-sm-5 control-label">Expiry date: </label>
+									</div>
+									<div class="label-wrapper col-sm-7 control-label " style="text-align:left">01/09/2017</div>
+								</ul>
+							</li>
+							<div class="clearfix"></div>
+						</ul>
+					</div>
+				</div>
+				<hr class="horizontal-divider">
+				<div class="form-group">
+					<div class="label-wrapper">
+						<label class="govtAgency col-md-3 col-sm-4 control-label"><b>CPF</b></label>
+					</div>
+					<div class="field-wrapper col-sm-9">
+						<ul class="e-services-list">
+							<li>CPF e-Service 1
+								<ul class="param-list-wrapper">
+									<div class="label-wrapper">
+										<label class="paramEntityeservices col-md-4 col-sm-5 control-label">Role: :</label>
+									</div>
+									<div class="label-wrapper col-sm-7 control-label " style="text-align:left">ADK1731</div>
+								</ul>
+								<div class="clearfix"></div>
+								<ul class="param-list-wrapper">
+									<div class="label-wrapper">
+										<label class="paramEntityeservices col-md-4 col-sm-5 control-label">Effective date: </label>
+									</div>
+									<div class="label-wrapper col-sm-7 control-label " style="text-align:left">01/09/2016</div>
+								</ul>
+								<div class="clearfix"></div>
+								<ul class="param-list-wrapper">
+									<div class="label-wrapper">
+										<label class="paramEntityeservices col-md-4 col-sm-5 control-label">Expiry date: </label>
+									</div>
+									<div class="label-wrapper col-sm-7 control-label " style="text-align:left">01/09/2017</div>
+								</ul>
+							</li>
+							<div class="clearfix"></div>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =================================== Selected Third Party Entity e-Service Row End =================================== -->
+	<div class="clearfix"></div>
+	<div class="doublelinebreak"></div>
+	<!-- ============================== Submit-Cancel Row ============================== -->
+	<div class="row-odd-wrapper">
+		<div class="form-inline col-sm-3 col-sm-offset-5 col-xs-12 col-xs-offset-0">
+			<button type="button" class="btn-size btn btn-default btn-md">Back</button>
+			<button type="button" class="btn-size btn btn-primary btn-md">Submit</button>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	</div>
+	<!-- ============================== Main Row End ============================== -->
+	<main-footer> </main-footer>
+
+</body>
+
+</html>

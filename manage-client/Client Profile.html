@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../resources/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-base.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-media-small.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-media-medium.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-ui.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap-table.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-toolbar.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-export.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-filter-control.js"></script>
+	<script src="../resources/js/angular.min.js"></script>
+	<script src="../resources/js/app.js"></script>
+</head>
+
+<body ng-app="app">
+	<main-header> </main-header>
+	<main-nav-tp> </main-nav-tp>
+	<!-- ============================== Container Wrapper Row ============================== -->
+	<div class="main-body-wrapper">
+		<div class="breadcrumb-wrapper hidden-xs hidden-sm">
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li>Manage Clients</li>
+				<li>View Client</li>
+			</ol>
+		</div>
+		<div class="header-title-wrapper">
+			<div class="common-page-title">Evergreen Technologies</div>
+			<div class="page-error"></div>
+			<div class="clearfix"></div>
+		</div>
+		<!-- ============================== Table Row ============================== -->
+		<div class="row-odd-wrapper">
+			<ul class="common-tab nav nav-tabs">
+				<li class="common-first-tab active"><a href="#common-firstTab" data-toggle="tab">Profile</a></li>
+				<li class="common-second-tab"><a href="#common-secondTab" data-toggle="tab">Authorise e-Services</a></li>
+				<li class="common-third-tab"><a href="#common-thirdTab" data-toggle="tab">Authorisation History</a></li>
+				<li class="common-fourth-tab"><a href="#common-fourthTab" data-toggle="tab">Authorised Users</a></li>
+			</ul>
+			<div class="tab-content ">
+				<!-- =================================== Profile Row =================================== -->
+				<div id="common-firstTab" class="tab-pane e-services-access-wrapper col-sm-12  active">
+					<div class="doublelinebreak"></div>
+					<div class="row">
+						<div class="form-group">
+							<div class="form-input-label col-sm-3">UEN / Entity ID</div> <span class="form-input-view">K4B2222J</span> </div>
+						<div class="form-group">
+							<div class="form-input-label col-sm-3">Entity Name</div> <span class="form-input-view">Evergreen Technologies</span> </div>
+						<div class="form-group">
+							<div class="form-input-label col-sm-3">Country of Incorporation</div> <span class="form-input-view">Singapore</span> </div>
+						<div class="form-group">
+							<div class="form-input-label col-sm-3">Address</div> <span class="form-input-view">6 Commonwealth Lane #04-04 GMTI Building Singapore 149547</span> </div>
+						<div class="form-group">
+							<div class="form-input-label col-sm-3">Office Contact No.</div> <span class="form-input-view"> 6123 4567</span> </div>
+					</div>
+				</div>
+				<!-- =================================== Profile Row  End=================================== -->
+				<!-- =================================== Authorise e-Services Row =================================== -->
+				<div id="common-secondTab" class="tab-pane user-accounts-wrapper col-sm-12">
+					<div class="doublelinebreak"></div> 
+					Authorise e-Services
+				</div>
+				<!-- ===================================Authorise e-Services Row End=================================== -->
+				<!-- =================================== Authorise History Row =================================== -->
+				<div id="common-thirdTab" class="tab-pane thirdparty-wrapper col-sm-12">
+					<div class="doublelinebreak"></div> 
+					View Authorisation History
+				</div>
+				<!-- =================================== Authorise History Row End =================================== -->
+				<!-- =================================== Third Party Users Row =================================== -->
+				<div id="common-fourthTab" class="tab-pane thirdparty-wrapper col-sm-12">
+					<div class="doublelinebreak"></div>  
+					Authorised Users
+					
+				</div>
+				<!-- =================================== Third Party Users Row End =================================== -->
+			</div>
+		</div>
+		<!-- row even  end -->
+		<div class="clearfix"></div>
+	</div>
+	<!-- ============================== Main Row End ============================== -->
+
+	<main-footer> </main-footer>	
+	
+	<!-- =================================== Export DataTable =================================== -->
+	<script>
+		var $table = $('#table');
+		$(function () {
+			$('#toolbar').find('select').change(function () {
+				$table.bootstrapTable('destroy').bootstrapTable({
+					exportDataType: $(this).val()
+				});
+			});
+		})
+	</script>
+	<!-- =================================== Export DataTable End=================================== -->
+	<!-- =================================== Toggle Column Input Fields=================================== -->
+	<script>
+		$(document).ready(function () {
+			$("input.uenEntityID, input.entityName, input.govtAgency, input.authoriseeService").hide();
+			$(".toggleSearch").click(function () {
+				$("input.uenEntityID, input.entityName, input.govtAgency, input.authoriseeService").toggle();
+				console.log('okay');
+			});
+		});
+	</script>
+	<!-- =================================== Toggle Column Input Fields Ends=================================== -->
+</body>
+
+</html>

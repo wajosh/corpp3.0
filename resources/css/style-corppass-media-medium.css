@@ -1,0 +1,544 @@
+/*--------------------------- Medium Devices Queries --------------------------- */
+/* -----------------Middle Device ------------------*
+
+/* Portrait */
+@media only screen and (min-device-width: 570px) and (max-device-width: 767px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) { 
+    .main-body-wrapper {
+        min-width: 365px !important;
+        max-width: 657px !important;
+        margin: 0px auto !important;
+        padding: 0px 2% 0px 2% !important;
+    }
+    .faq-cat-container {
+        background-color: #f9fafc;
+        list-style-type: none;
+        padding: 10px;
+        height: 100%;
+        text-align: left;
+        line-height: 30px;
+        width: 98% !important;
+    }
+    .talk-to-us-subdesc {
+        padding: 0px;
+        color: #1e5baa;
+        font-size: 0.70em;
+        width: 189px;
+        margin: 1% 0px 0px 25%;
+    }
+    .captcha-box {
+        width: 81% !important;
+        height: 50px !important;
+        border-style: ridge !important;
+        border-width: 1px !important;
+        vertical-align: bottom !important;
+    }
+    .captcha-refresh {
+        width: 40px !important;
+        height: 40px !important;
+        background: url(../img/icon-refresh.png);
+        background-size: 60% 60% !important;
+        background-position: 13px 15px !important;
+        background-repeat: no-repeat;
+        float: right;
+        cursor: pointer;
+    }
+    .login-button-wrapper {
+        padding: 30px 0px 30px 0px;
+        margin: 0px 0px 0px 10%;
+    }
+    .profile-head-wrapper {
+        position: relative;
+        height: inherit;
+        max-width: 940px;
+        padding: 20px 0px;
+        background: url(../img/entity-profile-img.jpg) no-repeat top center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: 100% 100%;
+    }
+    .dropdown-menu>li>a {
+        display: block;
+        padding: 15px 20px;
+        clear: both;
+        font-weight: 400;
+        line-height: 1.42857143;
+        color: #333;
+        white-space: nowrap;
+        border-bottom: 0px solid #c0c0c0;
+    }
+    /*  dropdown navigation border */
+    li.nav-home,
+    li.nav-services {
+        color: #9d9d9d;
+        border-right: 1px solid #222 !important;
+    }
+    /* Help Support Divider */
+    .divider { border-right: 0px solid #fff }
+    .login-button-wrapper {
+        padding: 30px 0px 30px 0px;
+        margin: 0px 0px 0px 10%;
+    }
+    .icon-img-rejected {
+        width: 81px;
+        height: 81px;
+        float: left;
+        background: url(../img/icons_img_page.png);
+        background-repeat: no-repeat;
+        background-position: -253px 0px;
+        padding: 100px 0px 0px 0px;
+        margin: 0px 25px 30px 0px;
+    }
+}
+/* Small devices (tablets, 768px and up) */
+/* Small Devices, Tablets */
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (min-width: 768px) and (max-device-width: 992px) { 
+    .main-body-wrapper {
+        min-width: 365px !important;
+        max-width: 657px !important;
+        margin: 0px auto !important;
+        padding: 0px 2% 0px 2% !important;
+    }
+    .faq-cat-container {
+        background-color: #f9fafc;
+        list-style-type: none;
+        padding: 10px;
+        height: 100%;
+        text-align: left;
+        line-height: 30px;
+        width: 98% !important;
+    }
+    .captcha-box {
+        width: 81% !important;
+        height: 50px !important;
+        border-style: ridge !important;
+        border-width: 1px !important;
+        vertical-align: bottom !important;
+    }
+    .captcha-refresh {
+        width: 40px !important;
+        height: 40px !important;
+        background: url(../img/icon-refresh.png);
+        background-size: 60% 60% !important;
+        background-position: 13px 15px !important;
+        background-repeat: no-repeat;
+        float: right;
+        cursor: pointer;
+    }
+    label.label-selectinput-fix { padding-left: 200px }
+    .dropdown-menu>li>a {
+        display: block;
+        padding: 15px 20px;
+        clear: both;
+        font-weight: 400;
+        line-height: 1.42857143;
+        color: #333;
+        white-space: nowrap;
+        border-bottom: 0px solid #c0c0c0;
+    }
+    /*  dropdown navigation border */
+    li.nav-home,
+    li.nav-services {
+        color: #9d9d9d;
+        border-right: 1px solid #222 !important;
+    }
+    /* login & search style */
+    ul.nav.navbar-nav.navbar-right { margin-right: 0px !important }
+    .icon-img-rejected {
+        width: 81px;
+        height: 81px;
+        float: left;
+        background: url(../img/icons_img_page.png);
+        background-repeat: no-repeat;
+        background-position: -253px 0px;
+        padding: 100px 0px 0px 0px;
+        margin: 0px 25px 30px 0px;
+    }
+    /*--------- User Guides --------- */
+    #registered-officer-accordion-first .registered-officer-accordion-heading {
+        border-bottom: 0px none;
+        font-size: 16px;
+        background-color: #24b9a2;
+        width: 200px !important;
+        height: 50px;
+        font-weight: bold;
+        padding: 10px 0px 0px 10px;
+    }
+    #registered-officer-accordion-first .registered-officer-accordion-heading .registered-officer-accordion-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 5px 0px !important;
+        color: #fff;
+        outline: medium none !important;
+        width: 200px !important;
+        height: 50px;
+    }
+    .registered-officer-accordion-inner {
+        background-color: #f9fdfb;
+        width: 200px !important;
+        padding: 10px 0px 10px 10px;
+        color: #205baa;
+        font-weight: 500;
+    }
+    /* Registered Officer - User guides*/
+    #admin-accordion-first .admin-accordion-heading {
+        border-bottom: 0px none;
+        font-size: 16px;
+        background-color: #205baa;
+        width: 200px !important;
+        height: 50px;
+        font-weight: bold;
+        padding: 10px 0px 0px 10px;
+    }
+    #admin-accordion-first .admin-accordion-heading .admin-accordion-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 5px 0px !important;
+        color: #fff;
+        outline: medium none !important;
+        width: 200px !important;
+        height: 50px;
+    }
+    .admin-accordion-inner {
+        background-color: #f9fdfb;
+        width: 200px !important;
+        padding: 10px 0px 10px 10px;
+        color: #205baa;
+        font-weight: 500;
+    }
+    /* Registered Officer - User guides*/
+    #user-accordion-first .user-accordion-heading {
+        border-bottom: 0px none;
+        font-size: 16px;
+        background-color: #f15a29;
+        width: 200px !important;
+        height: 50px;
+        font-weight: bold;
+        padding: 10px 0px 0px 10px;
+    }
+    #user-accordion-first .user-accordion-heading .user-accordion-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 5px 0px !important;
+        color: #fff;
+        outline: medium none !important;
+        width: 200px !important;
+        height: 50px;
+    }
+    .user-accordion-inner {
+        background-color: #f9fdfb;
+        width: 200px !important;
+        padding: 10px 0px 10px 10px;
+        color: #205baa;
+        font-weight: 500;
+    }
+    /* User End - User guides*/
+    #admin-manage-entity-accordion-second .admin-manage-entity-accordion-heading {
+        border-bottom: 0px none;
+        font-size: 16px;
+        background-color: #205baa;
+        width: 200px !important;
+        height: 50px;
+        font-weight: bold;
+        padding: 10px 0px 0px 10px;
+    }
+    #admin-manage-entity-accordion-second .admin-manage-entity-accordion-heading .admin-manage-entity-accordion-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 5px 0px !important;
+        color: #fff;
+        outline: medium none !important;
+        width: 200px !important;
+        height: 50px;
+    }
+    .admin-manage-entity-accordion-inner {
+        background-color: #f9fdfb;
+        width: 200px !important;
+        padding: 10px 0px 10px 10px;
+        color: #205baa;
+        font-weight: 500;
+    }
+    /* Admin (Manage CorpPass for Your Entity)- User guides End */
+    #manage-your-entity-registered-officer-accordion-first .manage-your-entity-registered-officer-accordion-heading {
+        border-bottom: 0px none;
+        font-size: 16px;
+        background-color: #24b9a2;
+        width: 200px !important;
+        height: 50px;
+        font-weight: bold;
+        padding: 10px 0px 0px 10px;
+    }
+    #manage-your-entity-registered-officer-accordion-first .manage-your-entity-registered-officer-accordion-heading .manage-your-entity-registered-officer-accordion-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 5px 0px !important;
+        color: #fff;
+        outline: medium none !important;
+        width: 200px !important;
+        height: 50px;
+    }
+    .manage-your-entity-registered-officer-accordion-inner {
+        background-color: #f9fdfb;
+        width: 200px !important;
+        padding: 10px 0px 10px 10px;
+        color: #205baa;
+        font-weight: 500;
+    }
+    #manage-acct-details-registered-officer-accordion-first .manage-acct-details-registered-officer-accordion-heading {
+        border-bottom: 0px none;
+        font-size: 16px;
+        background-color: #24b9a2;
+        width: 200px !important;
+        height: 50px;
+        font-weight: bold;
+        padding: 10px 0px 0px 10px;
+    }
+    #manage-acct-details-registered-officer-accordion-first .manage-acct-details-registered-officer-accordion-heading .manage-acct-details-registered-officer-accordion-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 5px 0px !important;
+        color: #fff;
+        outline: medium none !important;
+        width: 200px !important;
+        height: 50px;
+    }
+    .manage-acct-details-registered-officer-accordion-inner {
+        background-color: #f9fdfb;
+        width: 200px !important;
+        padding: 10px 0px 10px 10px;
+        color: #205baa;
+        font-weight: 500;
+    }
+    /* Manage CorpPass Registered Officer - User guides End*/
+    /*--------- User Guides Ends--------- */
+    /*--------- Contact Us ---------*/
+    .my-account-list,
+    .users-e-services-list {
+        list-style-type: none;
+        font-weight: bold;
+        color: #205baa;
+        margin: 0px 0px 0px 67px;
+        line-height: 23px;
+    }
+    .talk-to-us-subdesc {
+        padding: 0px;
+        color: #1e5baa;
+        font-size: 0.70em;
+        width: 189px;
+        margin: 0px;
+        float: left;
+    }
+    /*--------- Contact Us End---------*/
+}
+/* ----------- iPad 1 and 2 ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) { 
+    input.nric-input { width: 100% }
+    label.label-selectinput-fix {
+        position: relative;
+        left: -200px !important;
+    }
+    .dropdown-menu>li>a {
+        display: block;
+        padding: 15px 20px;
+        clear: both;
+        font-weight: 400;
+        line-height: 1.42857143;
+        color: #333;
+        white-space: nowrap;
+        border-bottom: 0px solid #c0c0c0;
+    }
+    /*  dropdown navigation border */
+    li.nav-home,
+    li.nav-services {
+        color: #9d9d9d;
+        border-right: 1px solid #222 !important;
+    }
+    /* login & search style */
+    ul.nav.navbar-nav.navbar-right { margin-right: 0px !important }
+    .icon-img-rejected {
+        width: 81px;
+        height: 81px;
+        float: left;
+        background: url(../img/icons_img_page.png);
+        background-repeat: no-repeat;
+        background-position: -253px 0px;
+        padding: 100px 0px 0px 0px;
+        margin: 0px 25px 30px 0px;
+    }
+    /*--------- User Guides --------- */
+    #registered-officer-accordion-first .registered-officer-accordion-heading {
+        border-bottom: 0px none;
+        font-size: 16px;
+        background-color: #24b9a2;
+        width: 200px !important;
+        height: 50px;
+        font-weight: bold;
+        padding: 10px 0px 0px 10px;
+    }
+    #registered-officer-accordion-first .registered-officer-accordion-heading .registered-officer-accordion-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 5px 0px !important;
+        color: #fff;
+        outline: medium none !important;
+        width: 200px !important;
+        height: 50px;
+    }
+    .registered-officer-accordion-inner {
+        background-color: #f9fdfb;
+        width: 200px !important;
+        padding: 10px 0px 10px 10px;
+        color: #205baa;
+        font-weight: 500;
+    }
+    /* Registered Officer - User guides*/
+    #admin-accordion-first .admin-accordion-heading {
+        border-bottom: 0px none;
+        font-size: 16px;
+        background-color: #205baa;
+        width: 200px !important;
+        height: 50px;
+        font-weight: bold;
+        padding: 10px 0px 0px 10px;
+    }
+    #admin-accordion-first .admin-accordion-heading .admin-accordion-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 5px 0px !important;
+        color: #fff;
+        outline: medium none !important;
+        width: 200px !important;
+        height: 50px;
+    }
+    .admin-accordion-inner {
+        background-color: #f9fdfb;
+        width: 200px !important;
+        padding: 10px 0px 10px 10px;
+        color: #205baa;
+        font-weight: 500;
+    }
+    /* Registered Officer - User guides*/
+    #user-accordion-first .user-accordion-heading {
+        border-bottom: 0px none;
+        font-size: 16px;
+        background-color: #f15a29;
+        width: 200px !important;
+        height: 50px;
+        font-weight: bold;
+        padding: 10px 0px 0px 10px;
+    }
+    #user-accordion-first .user-accordion-heading .user-accordion-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 5px 0px !important;
+        color: #fff;
+        outline: medium none !important;
+        width: 200px !important;
+        height: 50px;
+    }
+    .user-accordion-inner {
+        background-color: #f9fdfb;
+        width: 200px !important;
+        padding: 10px 0px 10px 10px;
+        color: #205baa;
+        font-weight: 500;
+    }
+    /* User End - User guides*/
+    #admin-manage-entity-accordion-second .admin-manage-entity-accordion-heading {
+        border-bottom: 0px none;
+        font-size: 16px;
+        background-color: #205baa;
+        width: 200px !important;
+        height: 50px;
+        font-weight: bold;
+        padding: 10px 0px 0px 10px;
+    }
+    #admin-manage-entity-accordion-second .admin-manage-entity-accordion-heading .admin-manage-entity-accordion-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 5px 0px !important;
+        color: #fff;
+        outline: medium none !important;
+        width: 200px !important;
+        height: 50px;
+    }
+    .admin-manage-entity-accordion-inner {
+        background-color: #f9fdfb;
+        width: 200px !important;
+        padding: 10px 0px 10px 10px;
+        color: #205baa;
+        font-weight: 500;
+    }
+    /* Admin (Manage CorpPass for Your Entity)- User guides End */
+    #manage-your-entity-registered-officer-accordion-first .manage-your-entity-registered-officer-accordion-heading {
+        border-bottom: 0px none;
+        font-size: 16px;
+        background-color: #24b9a2;
+        width: 200px !important;
+        height: 50px;
+        font-weight: bold;
+        padding: 10px 0px 0px 10px;
+    }
+    #manage-your-entity-registered-officer-accordion-first .manage-your-entity-registered-officer-accordion-heading .manage-your-entity-registered-officer-accordion-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 5px 0px !important;
+        color: #fff;
+        outline: medium none !important;
+        width: 200px !important;
+        height: 50px;
+    }
+    .manage-your-entity-registered-officer-accordion-inner {
+        background-color: #f9fdfb;
+        width: 200px !important;
+        padding: 10px 0px 10px 10px;
+        color: #205baa;
+        font-weight: 500;
+    }
+    #manage-acct-details-registered-officer-accordion-first .manage-acct-details-registered-officer-accordion-heading {
+        border-bottom: 0px none;
+        font-size: 16px;
+        background-color: #24b9a2;
+        width: 200px !important;
+        height: 50px;
+        font-weight: bold;
+        padding: 10px 0px 0px 10px;
+    }
+    #manage-acct-details-registered-officer-accordion-first .manage-acct-details-registered-officer-accordion-heading .manage-acct-details-registered-officer-accordion-toggle {
+        display: block;
+        cursor: pointer;
+        padding: 5px 0px !important;
+        color: #fff;
+        outline: medium none !important;
+        width: 200px !important;
+        height: 50px;
+    }
+    .manage-acct-details-registered-officer-accordion-inner {
+        background-color: #f9fdfb;
+        width: 200px !important;
+        padding: 10px 0px 10px 10px;
+        color: #205baa;
+        font-weight: 500;
+    }
+    /* Manage CorpPass Registered Officer - User guides End*/
+    /*--------- User Guides Ends--------- */
+    /*--------- Contact Us ---------*/
+    .my-account-list,
+    .users-e-services-list {
+        list-style-type: none;
+        font-weight: bold;
+        color: #205baa;
+        margin: 0px 0px 0px 67px;
+        line-height: 23px;
+    }
+    .talk-to-us-subdesc {
+        padding: 0px;
+        color: #1e5baa;
+        font-size: 0.70em;
+        width: 189px;
+        margin: 0px;
+        float: left;
+    }
+    /*--------- Contact Us End---------*/
+}

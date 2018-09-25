@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../resources/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-base.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-media-small.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-media-medium.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-ui.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap-table.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-toolbar.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-export.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-filter-control.js"></script>
+	<script src="../resources/js/angular.min.js"></script>
+	<script src="../resources/js/app.js"></script>
+</head>
+
+<body ng-app="app">
+	<main-header> </main-header>
+	<main-nav-tp> </main-nav-tp>
+
+	<!-- ============================== BreadCrumbs Row ============================== -->
+	<div class="approve-admin-success-container-wrapper">
+		<div class="breadcrumb-wrapper hidden-xs hidden-sm">
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li>View Entity's e-Service Access</li>
+			</ol>
+		</div>
+        <div class="header-title-wrapper">
+			<div class="common-page-title">View Entity's e-Services Access</div>
+			<div class="page-error"></div>
+			<div class="common-page-description">The table below displays your Entity's e-Service(s).<div class="linebreak"></div>
+			Click e-Service name to view its profile or select the corresponding checkbox(es) to remove e-Service(s) from your Entity.</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="doublelinebreak"></div>
+
+		<div class="row-odd-wrapper">
+
+					<div class="doublelinebreak"></div>
+				    <div class="doublelinebreak"></div> 
+					<!-- Export Tool Bar -->
+					<div id="toolbar">
+                        <button type="submit" class="btn btn-primary btn-md"><span class="glyphicon glyphicon-edit"></span> Edit  Entity e-Service (0)</button>
+						<button type="button" class="btn btn-default btn-md"><span class="icon-delete-disable"></span>Remove users (1)</button>
+						<span class="table-filter-twoMediumLeftbtn toggleSearch"  style="position:relative;left:50px"><i class="fa fa-filter fa-lg" aria-hidden="true"></i> <u>Filter</u></span>
+					</div>
+
+					<!-- Export Tool Bar End-->
+					<table id="table" data-toggle="table" data-pagination="false" data-search="true" data-advanced-search="true" data-click-to-select="true" data-toolbar="#toolbar" class="table-striped table-no-bordered" data-filter-control="true" data-filter-show-clear="true" data-show-export="true">
+						<thead>
+							<tr>
+								<th data-field="state" data-checkbox="true" ></th>
+								<th data-field="govtAgency" data-sortable="true" data-filter-control="input" >Govt.<br/> Agency</th>
+                                <th data-field="entitySelectedeSrvc" data-sortable="true"data-filter-control="input" >Entity's Selected<br/>e-Service</th>
+								<th data-field="description" data-sortable="true" data-filter-control="input" >Description</th>
+								<th data-field="addAgencyCheck" data-sortable="true">Additional<span class="icon-info-create-user-thead"></span><br/>Agency<br/>Check</th>
+                                <th data-field="addDetailsRequired" data-sortable="true">Additional <span class="icon-info-create-user-thead"></span><br/>Details<br/>Required</th>	 <th data-field="assignedUserUserGroups" data-sortable="true"data-filter-control="input" >Assigned Users /<br/>User Groups</th>	
+							</tr>
+						</thead>
+						<tfoot>
+							<tr>
+								<td colspan="7" class="footer-table-select-entity-eservice">0 entity(s) selected</td>
+							</tr>
+						</tfoot>
+					</table>			
+                    </div>		
+		<div class="clearfix"></div>
+
+			</div>
+		</div>
+		<!-- row even  end -->
+		<div class="clearfix"></div>
+	
+	<!-- =================================== Footer =================================== -->
+    <main-footer></main-footer>
+	<!-- =================================== Footer End =================================== -->
+	<!-- =================================== Toggle Column Input Fields=================================== -->
+	<script>
+		$(document).ready(function () {
+			$("input.govtAgency, input.entitySelectedeSrvc, input.description, input.addAgencyCheck, input.addDetailsRequired, input.assignedUserUserGroups").hide();
+			$(".toggleSearch").click(function () {
+				$("input.govtAgency, input.entitySelectedeSrvc, input.description, input.addAgencyCheck, input.addDetailsRequired, input.assignedUserUserGroups").toggle();
+			});
+		});
+	</script>
+</body>
+
+</html>

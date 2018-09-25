@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="../resources/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-base.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-media-small.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-media-medium.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-ui.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap-table.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	 crossorigin="anonymous"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-toolbar.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-export.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-filter-control.js"></script>
+	<script src="../resources/js/angular.min.js"></script>
+	<script src="../resources/js/app.js"></script>
+</head>
+
+<body ng-app="app">
+	<main-header> </main-header>
+	<main-nav-tp> </main-nav-tp>
+	<!-- ============================== Main Wrapper Row ============================== -->
+	<div class="main-body-wrapper">
+		<div class="breadcrumb-wrapper hidden-xs hidden-sm">
+			<ol class="breadcrumb">
+				<li> <a href="#">Home</a> </li>
+				<li>Assign Access Profile</li>
+			</ol>
+		</div>
+		<div class="header-title-wrapper">
+			<div class="common-page-title">Assign Access Profile</div>
+			<div class="clearfix"></div>
+			<div class="linebreak"></div>
+			<div class="assign-access-profile-stepThree"></div>
+			<div class="clearfix"></div>
+			<div class="trilinebreak"></div>
+			<div class="section-description">Assign Access Profile to <b>USER S99900085G</b></div>
+			<div class="clearfix"></div>
+			<div class="linebreak"></div>
+			<div class="section-description">e-Services with <img src="../resources/img/icons_additional_detail.png"> require
+				additional details. Click <img src="../resources/img/icons_additional_detail.png"> to enter details.</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="row-odd-wrapper assign-selected-e-services col-sm-7">
+			<!-- Export Tool Bar -->
+			<div id="toolbar">
+				<div class="section-subtitle"><span class="mandatory">*</span> - denotes mandatory fields</div>
+			</div>
+			<!-- Export Tool Bar End-->
+			<table class="table-enterDetails col-sm-5 table-striped table-no-bordered table table-hover" data-toggle="table"
+			 data-pagination="false" data-click-to-select="true" data-toolbar="#toolbar" data-filter-control="true"
+			 data-filter-show-clear="true">
+				<thead class="table-aap-enterDetails">
+					<tr>
+						<th data-width="40" data-field="actionDelete"></th>
+						<th data-width="118" data-sortable="true" data-field="govtAgency">&nbsp;Govt</br>&nbsp;Agency</th>
+						<th data-width="180" data-sortable="true" data-field="entitysSelectedEservices">Entity selected </br>e-Service</th>
+						<th data-width="104" data-sortable="true" data-field="agencyCheckRequired">Agency<br>Check<br>Required</th>
+						<th data-width="104" data-sortable="true" data-field="additionalDetailsRequired">Additional<br> Details<br>
+							Required</th>
+					</tr>
+				</thead>
+				<tbody class="table-aap-enterDetails">
+					<tr>
+						<td><span class="icon-delete"></span></td>
+						<td>shakedown7</td>
+						<td>Staging 302</td>
+						<td></td>
+						<td>
+							<span class="icons-additional-detail"></span>
+						</td>
+					</tr>
+					<tr>
+						<td><span class="icon-delete"></span></td>
+						<td>Singapore Polytechnic</td>
+						<td>Singapore Polytechnic Industry Partner e-Services</td>
+						<td></td>
+						<td>
+							<span class="icons-additional-detail"></span>
+						</td>
+					</tr>
+					<tr>
+						<td><span class="icon-delete"></span></td>
+						<td>shakedown7</td>
+						<td>Staging 302</td>
+						<td></td>
+						<td>
+							<span class="icons-additional-detail"></span>
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="7" class="footer-table-select-entity-eservice" for="count-checked-checkboxes"><span id="selectedItemCount">3</span>
+							e-Service(s) selected.</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		<div class="right-panel col-sm-5 col-xs-12">
+			<div class="right-panel-aap-wrapper">
+				<div id="addiParam-0">
+					<div class="right-panel-param-tile-request">SINGAPORE POLYTECHNIC -</br> INDUSTRY PARTNER SERVICES</div>
+					<span class="linebreak"></span>
+					<span class="linebreak"></span>
+					<div class="right-panel-field-wrapper form-control-aap col-sm-12">
+						<label>GSTN <span class="mandatory">*</span></label>
+						<select id="selectedEServices82.selectedEsrvcRole.eSrvcRoleId" name="selectedEServices[82].selectedEsrvcRole.eSrvcRoleId"
+						 class="form-control" onchange="return displayRoleDescription(this,82);">
+							<option value="0" selected="selected">M91234567X</option>
+							<option roledescription="builder" value="1276">builder</option>
+						</select>
+
+					</div>
+					<div class="clearfix"></div>
+					<span class="icon-delete-disabled aap-icon"></span>
+					<span class="linebreak"></span>
+					<div class="right-panel-field-wrapper form-control-aap col-sm-12">
+						<select id="selectedEServices82.selectedEsrvcRole.eSrvcRoleId" name="selectedEServices[82].selectedEsrvcRole.eSrvcRoleId"
+						 class="form-control" onchange="return displayRoleDescription(this,82);">
+							<option value="0" selected="selected">MR2345678A</option>
+							<option roledescription="builder" value="1276">builder</option>
+						</select>
+					</div>
+					<div class="clearfix"></div>
+					<span class="icon-delete-disabled aap-icon"></span>
+					<div class="right-panel-field-wrapper form-control-aap col-sm-12">
+						<button type="button" class="btn-size btn btn-float btn-default btn-md"><b>+</b> Add New</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="clearfix"></div>
+		<!-- ============================== Submit-Cancel Row ============================== -->
+		<div class="row-odd-wrapper">
+			<div class="form-inline col-sm-3 col-sm-offset-5 col-xs-12 col-xs-offset-0">
+				<button type="button" class="btn-size btn btn-default btn-md">Back</button>
+				<button type="button" class="btn-size btn btn-primary btn-md">Next</button>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- ============================== Main Wrapper Row End============================== -->
+	<main-footer> </main-footer>
+	<!-- =================================== Export DataTable =================================== -->
+	<script>
+		var $table = $('#table');
+		$(function () {
+			$('#toolbar').find('select').change(function () {
+				$table.bootstrapTable('destroy').bootstrapTable({
+					exportDataType: $(this).val()
+				});
+			});
+		})
+	</script>
+	<!-- =================================== Export DataTable End=================================== -->
+	<!-- =================================== Toggle Selected User / User Groups =================================== -->
+	<script>
+			(function ($) {
+				"use strict"
+				// Accordion Toggle Items
+				var iconOpen = 'fa fa-minus'
+					, iconClose = 'fa fa-plus';
+				$(document).on('show.bs.collapse hide.bs.collapse', '.accordion', function (e) {
+					var $target = $(e.target)
+					$target.siblings('.accordion-heading').find('em').toggleClass(iconOpen + ' ' + iconClose);
+					if (e.type == 'show') $target.prev('.accordion-heading').find('.accordion-toggle').addClass('active');
+					if (e.type == 'hide') $(this).find('.accordion-toggle').not($target).removeClass('active');
+				});
+			})(jQuery);
+	</script>
+	<!-- =================================== Toggle Selected User / User Groups End=================================== -->
+	<script>
+		$(document).ready(function () {
+			$(".parameter-row1").click(function () {
+				$(".additional-parameters01").fadeToggle();
+				$(".additional-parameters02").hide();
+			});
+			$(".parameter-row2").click(function () {
+				$(".additional-parameters02").fadeToggle();
+				$(".additional-parameters01").hide();
+			});
+		});
+	</script>
+</body>
+
+</html>

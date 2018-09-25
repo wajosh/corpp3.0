@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../resources/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-base.css" rel="stylesheet">
+	<link href="../resources/css/style-corppass-media-small.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-media-medium.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../resources/css/style-corppass-ui.css" rel="stylesheet">
+	<link href="../resources/plugins/bootstrap-3.3.6/css/bootstrap-table.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	 crossorigin="anonymous"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-toolbar.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-export.js"></script>
+	<script src="../resources/plugins/bootstrap-3.3.6/js/bootstrap-table-filter-control.js"></script>
+	<script src="../resources/js/angular.min.js"></script>
+	<script src="../resources/js/app.js"></script>
+</head>
+
+<body ng-app="app">
+	<main-header> </main-header>
+	<main-nav-tp> </main-nav-tp>
+	<!-- =================================== Navigation End =================================== -->
+	<!-- ============================== Container Wrapper Row ============================== -->
+	<div class="main-body-wrapper">
+		<div class="breadcrumb-wrapper hidden-xs hidden-sm">
+			<ol class="breadcrumb">
+				<li><a href="#">Home</a></li>
+				<li>Assign Access Profile</li>
+			</ol>
+		</div>
+		<div class="header-title-wrapper">
+			<div class="common-page-title">Assign Access Profile</div>
+			<div class="assign-access-profile-stepOne"></div>
+			<div class="page-error"></div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="doublelinebreak"></div>
+
+
+
+		<!-- ============================== Select e-Service Row  ============================== -->
+		<div class="row-odd-wrapper">
+			<div class="section-description">Ensure that you have selected e-Services for your Entity before assigning Access
+				Profile to your Sub-admins.</div>
+			<div id="toolbar">
+				<span class="periodLabel">Select from your entity's CorpPass Sub-admin(s).</span>
+				<span class="table-filter-assign-access-eservice toggleSearch"><i class="fa fa-filter fa-lg" aria-hidden="true"></i>
+					<u>Filter</u></span>
+			</div>
+			<table id="table" data-toggle="table" data-pagination="false" data-search="true" data-advanced-search="true"
+			 data-click-to-select="true" data-toolbar="#toolbar" class="table-striped table-no-bordered" data-filter-control="true"
+			 data-filter-show-clear="true" data-show-export="true" class="table-striped table-no-bordered">
+				<thead>
+					<tr>
+						<th data-field="state" data-checkbox="true"></th>
+						<th data-field="fullName" data-sortable="true" data-filter-control="input">Full Name</th>
+						<th data-field="emailAddress" data-sortable="true" data-filter-control="input">Email Address</th>
+						<th data-field="corppassID" data-sortable="true" class="add-param-tbl-col-7" data-filter-control="input">CorpPass
+							ID</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td class="add-param-tbl-col-3">User F9990003L</td>
+						<td class="add-param-tbl-col-3">joe@mail.com</td>
+						<td class="add-param-tbl-col-3">IPOSF9990003L</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="add-param-tbl-col-3">User F9990004X</td>
+						<td class="add-param-tbl-col-3">kim@mail.com</td>
+						<td class="add-param-tbl-col-3">IPOSF9990004X</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="add-param-tbl-col-3">F9990005U</td>
+						<td class="add-param-tbl-col-3">john@mail.com</td>
+						<td class="add-param-tbl-col-3">IPOSF9990005U</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="13" class="footer-table-select-entity-eservice">1 entity selected.</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		<!-- =================================== Select e-Service Row End =================================== -->
+
+	</div>
+	<!-- row even  end -->
+	<div class="clearfix"></div>
+	<div class="row-odd-wrapper">
+		<div class="doublelinebreak"></div>
+		<div class="form-inline col-sm-3 col-sm-offset-5 col-xs-9 col-xs-offset-1">
+			<button type="button" class="btn btn-default btn-md" onclick="return goBack();">Back</button>
+			<button type="submit" class="btn btn-primary btn-md">Next</button>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+
+	<!-- ============================== Main Row End ============================== -->
+	<!-- =================================== Footer =================================== -->
+	<main-footer></main-footer>
+	<!-- =================================== Footer End =================================== -->
+	<!-- =================================== Export DataTable =================================== -->
+	<script>
+		var $table = $('#table');
+		$(function () {
+			$('#toolbar').find('select').change(function () {
+				$table.bootstrapTable('destroy').bootstrapTable({
+					exportDataType: $(this).val()
+				});
+			});
+		})
+	</script>
+	<!-- =================================== Export DataTable End=================================== -->
+	<!-- =================================== Toggle Column Input Fields=================================== -->
+	<script>
+		$(document).ready(function () {
+			$("input.fullName, input.emailAddress, input.corppassID").hide();
+			$(".toggleSearch").click(function () {
+				$("input.fullName, input.emailAddress, input.corppassID").toggle();
+				console.log('okay');
+			});
+		});
+	</script>
+	<!-- =================================== Toggle Column Input Fields End=================================== -->
+</body>
+
+</html>
